@@ -1308,6 +1308,7 @@ jsScriptSystems:
   - js/GraphSystem.js
   - js/EditorInjectSystem.js
   - js/Main.js
+  - js/PlaceARGestureSystem.js
 enableMultiTouch: false
 enableLightMultiPass: false
 pixelLightCount: 4
