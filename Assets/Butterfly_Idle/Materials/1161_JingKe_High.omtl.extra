@@ -6,11 +6,11 @@
     },
     "extraType": "ResItemMaterialOmtl",
     "name": "1161_JingKe_High",
-    "objGuid": "Guid(5560516665795319090, 6328977153142141105)",
+    "objGuid": "Guid(4991411521921298241, 9093239686681272480)",
     "rttiType": "Material",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "skinObjGuid": "Guid(4635306201029529837, 18053947303740457133)"
+    "skinObjGuid": "Guid(4931356609821485330, 13420531301246326961)"
   }
 ]

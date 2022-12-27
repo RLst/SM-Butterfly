@@ -1,65 +1,6 @@
 [
   {
     "guid": {
-      "a": "e226e120-45c2-df9d-c687-26b0f35cc32b",
-      "b": ""
-    },
-    "objGuid": "Guid(17892678610801857370, 559697082159424149)",
-    "extraType": "Entity",
-    "name": "Camera",
-    "rttiType": "Entity",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "expanded": true,
-    "type": "none"
-  },
-  {
-    "guid": {
-      "a": "06426de3-9794-b596-68f5-ad8b19301597",
-      "b": ""
-    },
-    "objGuid": "Guid(1029434961439008335, 6372224128272086966)",
-    "extraType": "Transform",
-    "name": "Transform",
-    "eulerAngle": [
-      0,
-      0,
-      0
-    ],
-    "rotation": [
-      0,
-      0,
-      0,
-      1
-    ],
-    "rttiType": "Transform",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "displayKey": "component_transform",
-    "expanded": true,
-    "editable": true
-  },
-  {
-    "guid": {
-      "a": "c2ac6370-04ab-84d2-9e29-ab5ee8fabb24",
-      "b": ""
-    },
-    "objGuid": "Guid(12556560734000964803, 7508859945702231687)",
-    "extraType": "Camera",
-    "name": "Camera",
-    "rttiType": "Camera",
-    "version": "0.1.0",
-    "isVisibleInInspector": true,
-    "hideInPanel": false,
-    "displayKey": "inspector_add_camera",
-    "expanded": true,
-    "editable": true,
-    "usage": "Common"
-  },
-  {
-    "guid": {
       "a": "9a9d8627-dd4a-eb18-89d4-aa113c6da202",
       "b": ""
     },
@@ -276,7 +217,7 @@
     },
     "objGuid": "Guid(4951284517241392221, 4367103625822135449)",
     "extraType": "Entity",
-    "name": "Scene Object",
+    "name": "Character",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -321,14 +262,14 @@
     "name": "Transform",
     "eulerAngle": [
       0,
-      290,
+      0,
       0
     ],
     "rotation": [
       0,
-      0.5735762715339661,
       0,
-      -0.8191521763801575
+      0,
+      1
     ],
     "rttiType": "Transform",
     "version": "0.1.0",
@@ -401,15 +342,15 @@
     "extraType": "Transform",
     "name": "Transform",
     "eulerAngle": [
-      278.7732849121094,
-      139.33531188964844,
-      209.30804443359375
+      278.7732238769531,
+      139.33526611328125,
+      209.30809020996094
     ],
     "rotation": [
-      -0.745886504650116,
-      -0.03874756023287773,
-      -0.10076948255300522,
-      0.6572651863098145
+      -0.7458864450454712,
+      -0.038747552782297134,
+      -0.10076949745416641,
+      0.657265305519104
     ],
     "rttiType": "Transform",
     "version": "0.1.0",
@@ -1540,10 +1481,10 @@
       0
     ],
     "rotation": [
-      -0.7071067690849304,
+      0.7071065902709961,
       0,
       0,
-      0.7071067690849304
+      -0.7071069478988647
     ],
     "rttiType": "Transform",
     "version": "0.1.0",
@@ -1560,7 +1501,7 @@
     },
     "objGuid": "Guid(4937577637527546123, 14264173875308448642)",
     "extraType": "Entity",
-    "name": "Cube",
+    "name": "AR Touch",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -2416,6 +2357,33 @@
   },
   {
     "guid": {
+      "a": "ddd2f45c-c0d2-699d-a1c7-b0f847aa8493",
+      "b": ""
+    },
+    "objGuid": "Guid(5565853557377858741, 9372020873526445988)",
+    "extraType": "IFTransform2d",
+    "name": "2D Transform",
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rttiType": "IFTransform2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_2dtransform",
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
       "a": "8cf3b338-c5cc-a8e2-b9d6-737bc813a76a",
       "b": ""
     },
@@ -2616,7 +2584,7 @@
     },
     "objGuid": "Guid(5130805229777584015, 11052685739195441843)",
     "extraType": "Entity",
-    "name": "Image_R",
+    "name": "R Button",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -2649,7 +2617,7 @@
     },
     "objGuid": "Guid(5671955650035972803, 18286474727728296616)",
     "extraType": "Entity",
-    "name": "Image L",
+    "name": "L Button",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -2682,7 +2650,7 @@
     },
     "objGuid": "Guid(5411291837554389306, 9573712806249329292)",
     "extraType": "Entity",
-    "name": "Image Up",
+    "name": "U Button",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -2715,7 +2683,7 @@
     },
     "objGuid": "Guid(5010572276049334898, 16880765094449195953)",
     "extraType": "Entity",
-    "name": "Image Down",
+    "name": "D Button",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -2781,7 +2749,7 @@
     },
     "objGuid": "Guid(5558331564948450490, 6152625663421290171)",
     "extraType": "Entity",
-    "name": "Electric",
+    "name": "Anim Electric",
     "rttiType": "Entity",
     "version": "0.1.0",
     "isVisibleInInspector": true,
@@ -2825,5 +2793,113 @@
     "sequence": "57c4e22a-9ebd-ec7f-6edf-52fa62c320f7",
     "targetProperty": "Albedo",
     "playMode": 1
+  },
+  {
+    "guid": {
+      "a": "5b3eb5fa-e091-651e-87dc-690461ee94e5",
+      "b": ""
+    },
+    "objGuid": "Guid(5015668498568845148, 9918476573609878411)",
+    "extraType": "Entity",
+    "name": "Canvas (1)",
+    "rttiType": "Entity",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none"
+  },
+  {
+    "guid": {
+      "a": "ed778d11-f914-6769-9e4c-b31f73e8977a",
+      "b": ""
+    },
+    "objGuid": "Guid(5210946341291214495, 17051834524809451407)",
+    "extraType": "IFTransform2d",
+    "name": "2D Transform",
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rttiType": "IFTransform2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_2dtransform",
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
+      "a": "437617ca-b777-3b5e-8fea-36802e2ed2ec",
+      "b": ""
+    },
+    "objGuid": "Guid(5734413156348315721, 5473687629690506652)",
+    "extraType": "IFLayer2d",
+    "name": "Canvas",
+    "rttiType": "IFLayer2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "component_canvas",
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
+      "a": "b0f1fd09-75b8-8b01-65ea-a4079a8e3a55",
+      "b": ""
+    },
+    "objGuid": "Guid(4625438260935737577, 12765997537782576525)",
+    "extraType": "IFCanvas2d",
+    "name": "Canvas Scaler",
+    "rttiType": "IFCanvas2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_canvasscaler",
+    "expanded": true,
+    "editable": true,
+    "scaleFactor": "Screen Size"
+  },
+  {
+    "guid": {
+      "a": "64388f78-efc0-ee25-eb12-f98da2f264d2",
+      "b": ""
+    },
+    "objGuid": "Guid(5699548094495692203, 2017890053354544807)",
+    "extraType": "Entity",
+    "name": "D-Pad",
+    "rttiType": "Entity",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none"
+  },
+  {
+    "guid": {
+      "a": "419c9b63-e660-5e83-cc13-866d748834f1",
+      "b": ""
+    },
+    "objGuid": "Guid(5330533465001116692, 7074776884822709142)",
+    "extraType": "IFSprite2d",
+    "name": "Image",
+    "rttiType": "IFSprite2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_image",
+    "expanded": true,
+    "editable": true,
+    "advanced": false,
+    "texture": "00000000-0000-0000-0000-00000000003e"
   }
 ]

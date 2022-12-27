@@ -1,0 +1,58 @@
+{
+	"name": "Local Transform Info",
+	"id": "f68b5063-bc44-90ba-e7ea-2c46f413a577",
+	"inputs": [
+		{
+			"name": "Transform",
+			"description": "The Transform component you want to get its local transform information",
+			"type": "Transform",
+			"displayType": "Transform"
+		}
+	],
+	"outputs": [
+		{
+			"name": "Local Position",
+			"description": "The local position of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3"
+		},
+		{
+			"name": "Local Rotation",
+			"description": "The local rotation of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3"
+		},
+		{
+			"name": "Local Scale",
+			"description": "The local scale of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3"
+		},
+		{
+			"name": "Up Dir",
+			"description": "The local Y axis direction (green arrow) of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3"
+		},
+		{
+			"name": "Right Dir",
+			"description": "The local X axis direction (red arrow) of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3"
+		},
+		{
+			"name": "Forward Dir",
+			"description": "The local Z axis direction (blue arrow) of the Transform component",
+			"type": "Vector3f",
+			"displayType": "Vec3"
+		}
+	],
+	"js": "CGLocalPose.js",
+	"category": "Transform",
+	"description": "Get the local space position, rotation, and scale of a Transform component. If a Transform component is parented under another Transform component, it inherits the parent Transform component's local space coordinates.\n",
+	"productTypes": [
+		"TTEH"
+	],
+	"version": "1.1.0",
+	"onlineWebsite": "https://effecthouse.tiktok.com/learn/visual-scripting/Transform/Local-Transform-Info"
+}

@@ -6,7 +6,7 @@
     },
     "extraType": "ResItemTextureSequence",
     "name": "Electric 06",
-    "objGuid": "Guid(5480036582469721014, 1386087667417019028)",
+    "objGuid": "Guid(4851679022556674830, 3502486016513825698)",
     "rttiType": "AnimSeq",
     "version": "0.1.0",
     "isVisibleInInspector": true,

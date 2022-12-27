@@ -6,7 +6,7 @@
     },
     "extraType": "ResItemPNGImage",
     "name": "Arrow",
-    "objGuid": "Guid(5185759440512688984, 15581284354319939752)",
+    "objGuid": "Guid(4863018308437314756, 16710329313591924370)",
     "rttiType": "Texture2D",
     "version": "0.1.0",
     "isVisibleInInspector": true,
