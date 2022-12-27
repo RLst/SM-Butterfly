@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "0c64ae53-99db-334a-dfc1-4d6c260f06ed",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "1161_JingKe_D_512",
+    "objGuid": "Guid(5165392532171495531, 18054542174530991770)",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": true
+  }
+]

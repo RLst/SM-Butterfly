@@ -1,0 +1,2033 @@
+%YAML 1.1
+--- !Scene &1
+name: ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: V5
+entities:
+  - __class: Entity
+    name: Camera
+    guid: {a: 17892678610801857370, b: 559697082159424149}
+    scene: {localId: 1}
+    selfvisible: false
+    components:
+      - {localId: 2}
+      - __class: Camera
+        name: ""
+        guid: {a: 12556560734000964803, b: 7508859945702231687}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 10
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+    layer: 0
+  - __class: Entity
+    name: Directional Light
+    guid: {a: 3261253174792506660, b: 16680708562180406145}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 3}
+      - __class: DirectionalLight
+        name: ""
+        guid: {a: 13350271480239526722, b: 3096813384112271290}
+        enabled: true
+        color: {x: 1, y: 1, z: 1}
+        intensiy: 1
+        shadowEnable: false
+        shadowEnableNew: true
+        shadowResolution: {x: 256, y: 256}
+        shadowBias: 0
+        shadowStrength: 1
+        useSoftShadow: true
+        shadowSoftness: 1
+        blurRadius: 1.299999952316284
+        blurNum: 0
+        selfShadowGradient: 1
+        shadowColor: {x: 0, y: 0, z: 0}
+        InitStrength: 0.300000011920929
+        EsmC: 0.03500000014901161
+        lightingLayers: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderMode:
+          __class: LightRenderMode
+          value: AUTO
+        shadowArea: 100
+        autoShadowFrustum: true
+        shadowFrustumZNear: 1
+        shadowFrustumZFar: 100
+        cookieSize: 1
+        softShadowType:
+          __class: SoftShadowType
+          value: PCF
+        EVSMExponents: {x: 4, y: 4}
+        contactShadowEnable: false
+        lightUnit:
+          __class: LightUnit
+          value: Lux
+    layer: 0
+  - __class: Entity
+    name: AR Camera
+    guid: {a: 5107007617516517147, b: 14050932954236376732}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 4}
+      - __class: Camera
+        name: ""
+        guid: {a: 5607721860753390814, b: 8565666643937075607}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 11
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+      - __class: JSScriptComponent
+        name: ""
+        guid: {a: 5665622186617505785, b: 11818498718445788049}
+        enabled: true
+        path: js/DeviceTracker.js
+        properties:
+          __class: Map
+          trackingMode: World
+          useSystemAR: false
+    layer: 0
+  - __class: Entity
+    name: AR Plane
+    guid: {a: 5385604110764069559, b: 15495707396439515309}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 5}
+      - __class: MeshRenderer
+        name: ""
+        guid: {a: 5523119957731286479, b: 9095335627285083301}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 3dc784fc-eef4-f91a-0506-87c12b875858--3dc784fc-eef4-f91a-0506-87c12b875858.material}
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-0000000000a6}
+        castShadow: true
+      - __class: JSScriptComponent
+        name: ""
+        guid: {a: 4723808603934416000, b: 13970047079030868643}
+        enabled: true
+        path: js/PlaneTracker.js
+        properties:
+          __class: Map
+          detectionMode: Both
+    layer: 0
+  - __class: Entity
+    name: Scene Object
+    guid: {a: 4951284517241392221, b: 4367103625822135449}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 6}
+    layer: 0
+  - __class: Entity
+    name: Cube
+    guid: {a: 4937577637527546123, b: 14264173875308448642}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 7}
+      - __class: MeshRenderer
+        name: ""
+        guid: {a: 5492735834091154105, b: 8903964235521554079}
+        enabled: false
+        sharedMaterials:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000011--00000000-0000-0000-0000-000000000011.material}
+        sortingOrder: 1
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: 00000000-0000-0000-0000-000000000072}
+        castShadow: false
+      - __class: JSScriptComponent
+        name: ""
+        guid: {a: 4890373655035373120, b: 9946090434129377976}
+        enabled: true
+        path: js/InteractableObject.js
+        properties:
+          __class: Map
+          isDraggable: true
+          isInteractable: true
+          rotateSensitivity: 90
+          scaleSensitivity: 0
+    layer: 0
+  - __class: Entity
+    name: Butterfly_Idle
+    guid: {a: 5417003056723590856, b: 1706737015853484968}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+    layer: 0
+  - __class: Entity
+    name: SkeletonAndRenderRoot
+    guid: {a: 5224132114110227812, b: 3810867634566906778}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 9}
+      - __class: Animator
+        name: ""
+        guid: {a: 5305434395094076476, b: 17903092437376088228}
+        enabled: true
+        animations:
+          - {localId: 1, path: cd45ff27-66fb-370f-7a45-cf99b316ba82--Animaz-1_Take 001.animaz}
+        runningWrapModes:
+          __class: Map
+          Animaz-1_Take 001: 0
+        cullingMode:
+          __class: AnimatorCullingMode
+          value: CULL_UPDATE_PROPERTY
+    layer: 0
+  - __class: Entity
+    name: Bip001
+    guid: {a: 5644659124508490633, b: 383195246214737547}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 10}
+    layer: 0
+  - __class: Entity
+    name: Bip001 Pelvis
+    guid: {a: 5035207619665435642, b: 12860430560261494191}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 11}
+    layer: 0
+  - __class: Entity
+    name: Bip001 Spine
+    guid: {a: 4695007983357752242, b: 2254827352646557056}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 12}
+    layer: 0
+  - __class: Entity
+    name: Bip001 Spine1
+    guid: {a: 5485551633491717455, b: 3005168707219586993}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 13}
+    layer: 0
+  - __class: Entity
+    name: Bip001 Neck
+    guid: {a: 4889597723283051774, b: 16263047008278392726}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 14}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Clavicle
+    guid: {a: 5366079668441826113, b: 16189376054008543676}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 15}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L UpperArm
+    guid: {a: 5443164453799444530, b: 7044381308745446299}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 16}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Forearm
+    guid: {a: 4710818093192226523, b: 17759789989671198848}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 17}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Hand
+    guid: {a: 4639815350476415667, b: 7303035410054112139}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 18}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Finger0
+    guid: {a: 5564317849439222713, b: 15812059844756493225}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 19}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Finger01
+    guid: {a: 5085885963072726179, b: 10258683156857790376}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 20}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Finger1
+    guid: {a: 5649913525732505514, b: 4128792606504804285}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 21}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Finger11
+    guid: {a: 5588497557135968268, b: 5725619545851930034}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 22}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Finger2
+    guid: {a: 4987681539409003858, b: 52163423094435257}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 23}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Finger21
+    guid: {a: 5282557867676049278, b: 1919681445347488643}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 24}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Clavicle
+    guid: {a: 4799085684816551691, b: 4436253758950411171}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 25}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R UpperArm
+    guid: {a: 4909203157917317792, b: 12704391743885626242}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 26}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Forearm
+    guid: {a: 5279303781756220367, b: 17781537516594297267}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 27}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Hand
+    guid: {a: 5505733383648259822, b: 9554995869518230924}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 28}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Finger0
+    guid: {a: 5301213665368438563, b: 6654924581109524412}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 29}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Finger01
+    guid: {a: 5326730394672994022, b: 1044922706006331049}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 30}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Finger1
+    guid: {a: 5394723723486406541, b: 5343273079485786514}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 31}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Finger11
+    guid: {a: 5720297836127126418, b: 12106304424461722767}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 32}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Finger2
+    guid: {a: 5733826733533701548, b: 10870162553729805712}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 33}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Finger21
+    guid: {a: 5597367628237131095, b: 2599717697418876063}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 34}
+    layer: 0
+  - __class: Entity
+    name: Bip001 Head
+    guid: {a: 4796280738219183380, b: 6550668561329212803}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 35}
+    layer: 0
+  - __class: Entity
+    name: Bone_Hair01_L
+    guid: {a: 4695445260965125496, b: 16125963277872290701}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 36}
+    layer: 0
+  - __class: Entity
+    name: Bone_Hair02_L
+    guid: {a: 5308969700130443640, b: 10935850695525418131}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 37}
+    layer: 0
+  - __class: Entity
+    name: Bone_Hair03_L
+    guid: {a: 5327741074394002756, b: 16177733181123859103}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 38}
+    layer: 0
+  - __class: Entity
+    name: Bone_Hair01_R
+    guid: {a: 5356488618347304585, b: 599473105919418015}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 39}
+    layer: 0
+  - __class: Entity
+    name: Bone_Hair02_R
+    guid: {a: 4625262254995936298, b: 7187199603381442750}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 40}
+    layer: 0
+  - __class: Entity
+    name: Bone_Hair03_R
+    guid: {a: 4670117169168864430, b: 6150047585887940531}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 41}
+    layer: 0
+  - __class: Entity
+    name: Bone_Scabbard
+    guid: {a: 4772096195052001312, b: 16095225632959254957}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 42}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Thigh
+    guid: {a: 5393506172973215396, b: 9631867449055291797}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 43}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Calf
+    guid: {a: 4897566166166062568, b: 295676461918477451}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 44}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Foot
+    guid: {a: 5062846137417762615, b: 4274645257096230538}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 45}
+    layer: 0
+  - __class: Entity
+    name: Bip001 L Toe0
+    guid: {a: 5235174945143456380, b: 9445996307569707396}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 46}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Thigh
+    guid: {a: 5134095936370666230, b: 3480182936783389869}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 47}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Calf
+    guid: {a: 5354043345036550803, b: 8180210304822654086}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 48}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Foot
+    guid: {a: 5289630045324429649, b: 12244829162241827235}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 49}
+    layer: 0
+  - __class: Entity
+    name: Bip001 R Toe0
+    guid: {a: 5030428981724375507, b: 10232826953936311223}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 50}
+    layer: 0
+  - __class: Entity
+    name: Bip001 Weapon_R
+    guid: {a: 5668550341013095113, b: 3655844256337237651}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 51}
+    layer: 0
+  - __class: Entity
+    name: 1161_JingKe_High
+    guid: {a: 4934083764330425774, b: 6097490503900791709}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 52}
+      - __class: SkinMeshRenderer
+        name: mesh0_renderer
+        guid: {a: 5343258253104822317, b: 16111309924219114631}
+        enabled: true
+        sharedMaterials:
+          - {localId: 1, path: 442b7669-c5cb-dcb5-ee8d-95720c4f0318--442b7669-c5cb-dcb5-ee8d-95720c4f0318-skin.material}
+        sortingOrder: 2
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        mesh: {localId: 1, path: cd45ff27-66fb-370f-7a45-cf99b316ba82--1161_JingKe_High.mesh}
+        gpuTextureSkinning: false
+        useCoarseMesh: false
+        castShadow: false
+        skin:
+          __class: Skin
+          name: ""
+          guid: {a: 5625562351618275675, b: 6434319543269007785}
+          skelRootName: ""
+          joints:
+            - __class: Joint
+              name: Bip001 R Forearm
+              guid: {a: 4644741283269716593, b: 11986844303577385881}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.1489383, 0.987466, -0.05222683, 0, 0.4294796, 0.01702287, -0.902916, 0, -0.8907101, -0.1569091, -0.426632, 0, 96.47591, 8.229661, 73.47203, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 15.24043, y: 37.15498, z: 124.7748}}
+              jointTransform: {localId: 27}
+            - __class: Joint
+              name: Bip001 R UpperArm
+              guid: {a: 5101127782100534604, b: 16445418915699967395}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.1392588, 0.988878, -0.0522268, 0, 0.4164559, -0.1063343, -0.902916, 0, -0.8984271, 0.1039889, -0.426632, 0, 123.791, -19.6641, 73.47204, 1]}
+              boundingBox: {min: {x: -0.1836322, y: 0, z: 0}, max: {x: 17.03234, y: 30.85726, z: 149.0467}}
+              jointTransform: {localId: 26}
+            - __class: Joint
+              name: Bip001 Spine1
+              guid: {a: 5430600483504309633, b: 9011636567989705907}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.121468, -0.992595, -2.72128e-06, 0, -3.952752e-08, 2.736742e-06, -1, 0, 0.992595, 0.121468, 2.93192e-07, 0, -127.1771, -16.32534, -4.5096e-05, 1]}
+              boundingBox: {min: {x: -14.74815, y: -21.74819, z: 0}, max: {x: 13.56063, y: 17.69779, z: 155.7892}}
+              jointTransform: {localId: 13}
+            - __class: Joint
+              name: Bip001 R Clavicle
+              guid: {a: 5244264998511766467, b: 5093341912565642372}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.1069842, 0.9818271, -0.1567473, 0, 0.952907, -0.1462467, -0.2656701, 0, -0.2837659, -0.1209431, -0.9512361, 0, 40.12153, 13.41203, 141.8758, 1]}
+              boundingBox: {min: {x: -2.648168, y: -1.422944e-05, z: 0}, max: {x: 13.56063, y: 18.95192, z: 155.3629}}
+              jointTransform: {localId: 25}
+            - __class: Joint
+              name: Bip001 Spine
+              guid: {a: 5142655532635142893, b: 7992953586168633220}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [1e-15, -1, -2.74181e-06, 0, 1e-15, 2.74181e-06, -1, 0, 1, 1e-15, 1e-15, 0, -117.6642, -0.763851, -7.07794e-06, 1]}
+              boundingBox: {min: {x: -12.63774, y: -13.75459, z: 0}, max: {x: 10.1153, y: 15.16821, z: 132.6479}}
+              jointTransform: {localId: 12}
+            - __class: Joint
+              name: Bip001 Pelvis
+              guid: {a: 5549646260793113232, b: 7421571876841484950}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.181343, -0.98342, 1.14411e-06, 0, 1.381032e-06, -1.418062e-06, -1, 0, 0.98342, -0.181343, 1.61529e-06, 0, -103.8963, 22.33241, -0.000175135, 1]}
+              boundingBox: {min: {x: -12.73254, y: -20.57097, z: 0}, max: {x: 16.80032, y: 21.18748, z: 124.8818}}
+              jointTransform: {localId: 11}
+            - __class: Joint
+              name: Bip001 R Thigh
+              guid: {a: 4784832167755787762, b: 15018492803809762734}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.02503233, -0.999686, 0.000734743, 0, -0.0287565, 1.460181e-05, 0.999586, 0, -0.999273, -0.0250431, -0.0287471, 0, 106.309, 5.780286, -5.319676, 1]}
+              boundingBox: {min: {x: -9.595857, y: -8.826235e-06, z: 0}, max: {x: 14.38159, y: 21.18748, z: 111.3062}}
+              jointTransform: {localId: 47}
+            - __class: Joint
+              name: Bip001 R Calf
+              guid: {a: 4894824991895313716, b: 9606175720490674618}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.0262281, -0.999656, 0.000734792, 0, -0.02875649, -1.974681e-05, 0.999586, 0, -0.999242, -0.0262384, -0.0287471, 0, 61.26416, 5.853571, -5.319676, 1]}
+              boundingBox: {min: {x: -4.345334, y: 0, z: 0}, max: {x: 15.91909, y: 16.03405, z: 67.23415}}
+              jointTransform: {localId: 48}
+            - __class: Joint
+              name: Bip001 Neck
+              guid: {a: 5218180739154286784, b: 12645377800638043327}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.177846, -0.984058, -2.6976e-06, 0, -4.866702e-08, 2.750096e-06, -1, 0, 0.984058, -0.177846, -5.36985e-07, 0, -147.4058, 33.32624, 7.86637e-05, 1]}
+              boundingBox: {min: {x: 0, y: -4.539863, z: 0}, max: {x: 10.44612, y: 4.539834, z: 159.3951}}
+              jointTransform: {localId: 14}
+            - __class: Joint
+              name: Bip001 Head
+              guid: {a: 5229697635606270357, b: 13762833720497336759}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.156866, -0.98762, -2.70748e-06, 0, -4.815991e-08, 2.749069e-06, -1, 0, 0.98762, -0.156866, -4.78799e-07, 0, -156.2055, 30.00917, 6.94641e-05, 1]}
+              boundingBox: {min: {x: -8.089115, y: -13.18344, z: 0}, max: {x: 13.72957, y: 8.609683, z: 178.882}}
+              jointTransform: {localId: 35}
+            - __class: Joint
+              name: Bip001 L Forearm
+              guid: {a: 5303493474179187445, b: 18265666871123063682}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.1489383, 0.987466, 0.05222691, 0, -0.4294796, -0.01702278, -0.902916, 0, -0.8907101, -0.1569091, 0.426632, 0, 96.47591, 8.22966, -73.47204, 1]}
+              boundingBox: {min: {x: 0, y: -37.15499, z: 0}, max: {x: 15.24042, y: 1, z: 122.8985}}
+              jointTransform: {localId: 17}
+            - __class: Joint
+              name: Bip001 L UpperArm
+              guid: {a: 5759352046765778048, b: 11790433722356136127}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.1392588, 0.988878, 0.0522268, 0, -0.4164559, 0.1063343, -0.902916, 0, -0.8984271, 0.1039889, 0.426632, 0, 123.791, -19.6641, -73.47205, 1]}
+              boundingBox: {min: {x: 0, y: -30.85728, z: 0}, max: {x: 17.03234, y: 1, z: 149.6067}}
+              jointTransform: {localId: 16}
+            - __class: Joint
+              name: Bip001 L Clavicle
+              guid: {a: 5014070387263363720, b: 17700052989981954234}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.1069842, 0.9818271, 0.1567473, 0, -0.952907, 0.1462467, -0.2656701, 0, -0.2837659, -0.1209431, 0.9512361, 0, 40.12153, 13.41203, -141.8758, 1]}
+              boundingBox: {min: {x: -5.861285, y: -21.74819, z: 0}, max: {x: 13.23147, y: 1, z: 155.4773}}
+              jointTransform: {localId: 15}
+            - __class: Joint
+              name: Bip001 L Thigh
+              guid: {a: 4700539490515793378, b: 3475287650701527963}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.02503233, -0.999686, -0.000734748, 0, 0.0287567, -1.46018e-05, 0.999586, 0, -0.999273, -0.0250431, 0.0287473, 0, 106.309, 5.780286, 5.319658, 1]}
+              boundingBox: {min: {x: -12.73254, y: -22.00342, z: 0}, max: {x: 16.71669, y: 2.855341, z: 116.0276}}
+              jointTransform: {localId: 43}
+            - __class: Joint
+              name: Bip001 L Calf
+              guid: {a: 4962258225570941309, b: 1109478230045447072}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.0262281, -0.999656, -0.000734797, 0, 0.02875669, 1.974705e-05, 0.999586, 0, -0.999242, -0.0262384, 0.0287473, 0, 61.26416, 5.853571, 5.319658, 1]}
+              boundingBox: {min: {x: -4.345334, y: -16.03405, z: 0}, max: {x: 15.91909, y: 1, z: 67.23415}}
+              jointTransform: {localId: 44}
+            - __class: Joint
+              name: Bip001 R Finger0
+              guid: {a: 5510689194975009901, b: 14457900907804087}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.2533526, 0.966704, -0.03600273, 0, 0.04389491, -0.02569064, -0.998706, 0, -0.9663779, -0.254605, -0.03592459, 0, 92.93353, 22.57846, 36.91991, 1]}
+              boundingBox: {min: {x: -0.3222575, y: 0, z: 0}, max: {x: 6.813309, y: 37.82402, z: 100.7479}}
+              jointTransform: {localId: 29}
+            - __class: Joint
+              name: Bip001 R Finger01
+              guid: {a: 5321304904227213881, b: 4858200733462561414}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.08596037, 0.995648, -0.0360022, 0, 0.03890942, -0.03275348, -0.998706, 0, -0.995538, -0.08725, -0.0359246, 0, 90.65496, 7.330025, 36.91992, 1]}
+              boundingBox: {min: {x: -0.3222575, y: 0, z: 0}, max: {x: 3.839373, y: 35.5113, z: 95.83681}}
+              jointTransform: {localId: 30}
+            - __class: Joint
+              name: Bip001 R Finger1
+              guid: {a: 5124425430860723532, b: 11716794488251447201}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.0161742, -0.0544572, -0.998385, 0, 0.5295082, -0.847469, 0.03764722, 0, -0.8481508, -0.528044, 0.04254266, 0, 59.55543, 81.25875, -1.163798, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 7.299641, y: 42.42681, z: 94.55241}}
+              jointTransform: {localId: 31}
+            - __class: Joint
+              name: Bip001 R Finger11
+              guid: {a: 5529830473534645239, b: 2539959509817986723}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.1006741, -0.0541841, -0.993443, 0, 0.5074883, -0.856054, 0.09811886, 0, -0.8557568, -0.514039, -0.05868472, 0, 56.30112, 80.34042, 5.507516, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 4.683429, y: 42.42681, z: 93.12015}}
+              jointTransform: {localId: 32}
+            - __class: Joint
+              name: Bip001 R Finger2
+              guid: {a: 5706693201976737264, b: 2439094006587436475}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.08188101, -0.04402279, -0.995669, 0, 0.513112, -0.854587, 0.07998179, 0, -0.854407, -0.517439, -0.04738581, 0, 60.11831, 80.82056, 8.803221, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 10.27742, y: 42.58807, z: 94.55241}}
+              jointTransform: {localId: 33}
+            - __class: Joint
+              name: Bip001 R Hand
+              guid: {a: 5191966562763586282, b: 13486572747082798251}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.02235093, -0.05143172, -0.998426, 0, 0.428165, -0.902946, 0.03692824, 0, -0.903424, -0.426666, 0.04220292, 0, 76.48923, 73.47083, 1.553054, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 11.06476, y: 39.54155, z: 107.9693}}
+              jointTransform: {localId: 28}
+            - __class: Joint
+              name: Bip001 R Finger21
+              guid: {a: 5405137727373652491, b: 6489221334188105860}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.0760997, -0.05339799, -0.995669, 0, 0.4084381, -0.909275, 0.07998185, 0, -0.9096079, -0.412756, -0.04738578, 0, 64.8839, 73.66372, 8.803217, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 10.235, y: 42.58807, z: 93.31866}}
+              jointTransform: {localId: 34}
+            - __class: Joint
+              name: Bone_Scabbard
+              guid: {a: 4991329624984295975, b: 14931505596064802960}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.06424591, -0.996571, 0.0521253, 0, -0.353472, -0.02612174, -0.93508, 0, 0.933236, -0.07849988, -0.350582, 0, -97.96607, 25.86451, 40.33098, 1]}
+              boundingBox: {min: {x: 0, y: -23.85988, z: 0}, max: {x: 18.52998, y: 42.41513, z: 168.6838}}
+              jointTransform: {localId: 42}
+            - __class: Joint
+              name: Bip001 Weapon_R
+              guid: {a: 5689806320448431682, b: 15821154465411018396}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [1, -6.35716e-08, -4.183e-10, 0, 6.3573e-08, 0.999978, 0.00657984, 0, -1e-15, -0.00657984, 0.999978, 0, -16.90738, -63.02037, -41.95683, 1]}
+              boundingBox: {min: {x: 0, y: 0, z: 0}, max: {x: 19.80578, y: 84.23055, z: 192.1668}}
+              jointTransform: {localId: 51}
+            - __class: Joint
+              name: Bone_Hair01_L
+              guid: {a: 5753147081616434751, b: 13620411206638447493}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.3984092, 0.753257, -0.5233294, 0, -0.6342511, -0.638419, -0.4360575, 0, -0.6625668, 0.158193, 0.7321061, 0, 108.5091, -36.92257, -115.0717, 1]}
+              boundingBox: {min: {x: -2.518893, y: -15.43724, z: 0}, max: {x: 13.84906, y: 1, z: 163.0157}}
+              jointTransform: {localId: 36}
+            - __class: Joint
+              name: Bone_Hair02_L
+              guid: {a: 5090262201019357568, b: 5220216157573019834}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.8748142, 0.13302, -0.465838, 0, -0.02882247, -0.974153, -0.2240424, 0, -0.4835996, -0.182569, 0.8560369, 0, 81.82008, 17.50509, -132.6886, 1]}
+              boundingBox: {min: {x: -12.25876, y: -15.43724, z: 0}, max: {x: 13.84906, y: 1, z: 160.1836}}
+              jointTransform: {localId: 37}
+            - __class: Joint
+              name: Bone_Hair03_L
+              guid: {a: 4910062472646951565, b: 7370193470114034600}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.653394, 0.03487819, -0.756214, 0, 0.2768743, -0.918717, -0.2816016, 0, -0.7045688, -0.393373, 0.5906272, 0, 105.1165, 49.13919, -95.04404, 1]}
+              boundingBox: {min: {x: -14.47276, y: -15.43724, z: 0}, max: {x: 5.634027, y: 1, z: 155.6217}}
+              jointTransform: {localId: 38}
+            - __class: Joint
+              name: Bone_Hair02_R
+              guid: {a: 4725779555775928776, b: 4372959229065408667}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.8748142, -0.13302, -0.465838, 0, 0.02882247, -0.974153, 0.2240424, 0, -0.4835996, 0.182569, 0.8560369, 0, 81.82009, -17.50509, -132.6886, 1]}
+              boundingBox: {min: {x: -10.97612, y: 0, z: 0}, max: {x: 13.84906, y: 15.43727, z: 160.1552}}
+              jointTransform: {localId: 40}
+            - __class: Joint
+              name: Bone_Hair01_R
+              guid: {a: 4815642497880442675, b: 1803011077686585019}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.3984097, -0.7532574, -0.523329, 0, 0.6342517, -0.6384187, 0.436058, 0, -0.6625669, -0.1581925, 0.732107, 0, 108.5091, 36.92243, -115.0717, 1]}
+              boundingBox: {min: {x: -2.600096, y: 0, z: 0}, max: {x: 13.84906, y: 15.43727, z: 163.0157}}
+              jointTransform: {localId: 39}
+            - __class: Joint
+              name: Bone_Hair03_R
+              guid: {a: 4697811802722472797, b: 9681275741302621105}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.653394, -0.03487859, -0.756214, 0, -0.2768741, -0.918717, 0.2816018, 0, -0.7045689, 0.393373, 0.5906271, 0, 105.1165, -49.13918, -95.04401, 1]}
+              boundingBox: {min: {x: -14.47276, y: 0, z: 0}, max: {x: 5.634037, y: 15.43727, z: 155.5932}}
+              jointTransform: {localId: 41}
+            - __class: Joint
+              name: Bip001 L Finger0
+              guid: {a: 5343948564391634733, b: 12038314863534583190}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.2533526, 0.966704, 0.03600273, 0, -0.04389482, 0.02569067, -0.998706, 0, -0.9663779, -0.254605, 0.03592449, 0, 92.93353, 22.57846, -36.91991, 1]}
+              boundingBox: {min: {x: -0.3222633, y: -37.82404, z: 0}, max: {x: 6.813303, y: 1, z: 100.7479}}
+              jointTransform: {localId: 19}
+            - __class: Joint
+              name: Bip001 L Finger01
+              guid: {a: 4948206220609930979, b: 3926277316596381369}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.08596038, 0.995648, 0.0360021, 0, -0.03890931, 0.03275339, -0.998706, 0, -0.995538, -0.08725, 0.0359245, 0, 90.65496, 7.33002, -36.91992, 1]}
+              boundingBox: {min: {x: -0.3222633, y: -35.51132, z: 0}, max: {x: 3.839367, y: 1, z: 95.83681}}
+              jointTransform: {localId: 20}
+            - __class: Joint
+              name: Bip001 L Finger1
+              guid: {a: 5022542796471156425, b: 15487395148654961339}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.0161742, -0.0544573, 0.998385, 0, -0.5295082, 0.847469, 0.03764731, 0, -0.8481508, -0.528044, -0.04254271, 0, 59.55544, 81.25876, 1.163807, 1]}
+              boundingBox: {min: {x: 0, y: -42.42683, z: 0}, max: {x: 7.299634, y: 1, z: 94.55241}}
+              jointTransform: {localId: 21}
+            - __class: Joint
+              name: Bip001 L Finger11
+              guid: {a: 4837680166223725858, b: 13562100294840137361}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.1006742, -0.05418423, 0.993443, 0, -0.5074876, 0.856054, 0.09811895, 0, -0.8557572, -0.514038, 0.05868473, 0, 56.3012, 80.34042, -5.507516, 1]}
+              boundingBox: {min: {x: 0, y: -42.42683, z: 0}, max: {x: 4.623251, y: 1, z: 93.12015}}
+              jointTransform: {localId: 22}
+            - __class: Joint
+              name: Bip001 L Finger2
+              guid: {a: 5643236062967539164, b: 11706222772920372616}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.08188106, -0.04402293, 0.995669, 0, -0.513112, 0.854587, 0.07998192, 0, -0.854407, -0.517439, 0.04738579, 0, 60.11832, 80.82056, -8.803218, 1]}
+              boundingBox: {min: {x: 0, y: -42.58809, z: 0}, max: {x: 10.27742, y: 1, z: 94.55241}}
+              jointTransform: {localId: 23}
+            - __class: Joint
+              name: Bip001 L Hand
+              guid: {a: 4777120500129422200, b: 16398065126484540851}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-0.02235089, -0.05143169, 0.998426, 0, -0.428165, 0.902946, 0.03692824, 0, -0.903424, -0.426666, -0.04220288, 0, 76.48923, 73.47083, -1.553063, 1]}
+              boundingBox: {min: {x: 0, y: -39.54157, z: 0}, max: {x: 10.27742, y: 1, z: 101.3959}}
+              jointTransform: {localId: 18}
+            - __class: Joint
+              name: Bip001 L Finger21
+              guid: {a: 5654207652592760496, b: 4068223594029376922}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [0.07609975, -0.05339802, 0.995669, 0, -0.4084381, 0.909275, 0.07998189, 0, -0.9096079, -0.412756, 0.0473858, 0, 64.8839, 73.66372, -8.803221, 1]}
+              boundingBox: {min: {x: 0, y: -42.58809, z: 0}, max: {x: 10.23499, y: 1, z: 93.31866}}
+              jointTransform: {localId: 24}
+            - __class: Joint
+              name: Bip001 L Foot
+              guid: {a: 4801696802098155411, b: 16871806304339221648}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [1e-15, -0.999999, -0.00117569, 0, -1e-15, -0.00117569, 0.999999, 0, -1, -1e-15, -1e-15, 0, 17.81865, 5.380921, 5.836679, 1]}
+              boundingBox: {min: {x: -11.58848, y: -12.61162, z: -0.01919889}, max: {x: 13.37628, y: 1, z: 24.89899}}
+              jointTransform: {localId: 45}
+            - __class: Joint
+              name: Bip001 L Toe0
+              guid: {a: 5254036312434148862, b: 3288691335498727577}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-1, 1e-15, 8.73115e-08, 0, 8.73115e-08, -2.29045e-07, 1, 0, 2.010648e-14, 1, 2.29045e-07, 0, -7.605347, -0.517751, 5.845625, 1]}
+              boundingBox: {min: {x: -3.151277, y: -12.61162, z: -0.01608298}, max: {x: 1, y: 1, z: 8.762675}}
+              jointTransform: {localId: 46}
+            - __class: Joint
+              name: Bip001 R Foot
+              guid: {a: 5023263870787229641, b: 15546181013348181171}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [1e-15, -0.999999, 0.00117562, 0, -1e-15, 0.00117562, 0.999999, 0, -1, -1e-15, -1e-15, 0, 17.81865, 5.38092, -5.836692, 1]}
+              boundingBox: {min: {x: -11.58848, y: 0, z: -0.01919889}, max: {x: 13.37628, y: 12.61162, z: 24.89899}}
+              jointTransform: {localId: 49}
+            - __class: Joint
+              name: Bip001 R Toe0
+              guid: {a: 5312317088079582337, b: 14072020495125501340}
+              invBindPosMatrix: {__class: Matrix4x4f, values: [-1, -1.19255e-07, -1.51922e-07, 0, -1.51922e-07, 1.42553e-07, 1, 0, -1.19255e-07, 1, -1.42553e-07, 0, -7.605347, -0.517752, -5.845639, 1]}
+              boundingBox: {min: {x: -3.151277, y: 0, z: -0.01608298}, max: {x: 1, y: 12.61162, z: 8.762675}}
+              jointTransform: {localId: 50}
+          positionOnly: false
+          useTangent: true
+    layer: 0
+  - __class: Entity
+    name: 2D Camera
+    guid: {a: 5176756134790741105, b: 7780400855194559893}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 53}
+      - __class: Camera
+        name: ""
+        guid: {a: 5278940072229907604, b: 285158141799861426}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [2, 0]}
+        renderOrder: 20
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        orthoScale: 1
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+    layer: 1
+  - __class: Entity
+    name: Canvas
+    guid: {a: 5260011074847999204, b: 8570939240444514690}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 54}
+      - __class: IFLayer2d
+        name: ""
+        guid: {a: 5725186509568880764, b: 249674296747159430}
+        enabled: true
+        sortingOrder: 3
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        renderOrderMode:
+          __class: IFLayer2dRenderOrderMode
+          value: SceneCustom
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        blendAlpha: 1
+        blendAlphaCkeck: true
+        drawCallNum: 3
+        maskType:
+          __class: IFMaskType
+          value: None
+        inverted: false
+        scissorRectMask: false
+        updateFlag: false
+        updateSortFlag: false
+      - __class: IFCanvas2d
+        name: ""
+        guid: {a: 5079051133808557896, b: 13156108989542512791}
+        enabled: true
+        resolutionType:
+          __class: IFResolutionType
+          value: FitHeight
+        resolutionSize: {x: 720, y: 1280}
+    layer: 1
+  - __class: Entity
+    name: Image_R
+    guid: {a: 5130805229777584015, b: 11052685739195441843}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 55}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 5586723983729035889, b: 12854337097577579961}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 3d9613cf-1919-4139-9e79-8c8b01d6035c--3d9613cf-1919-4139-9e79-8c8b01d6035c.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
+  - __class: Entity
+    name: Image L
+    guid: {a: 5671955650035972803, b: 18286474727728296616}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 56}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 4640917112716560193, b: 8842543454541041069}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 3d9613cf-1919-4139-9e79-8c8b01d6035c--3d9613cf-1919-4139-9e79-8c8b01d6035c.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
+  - __class: Entity
+    name: Image Up
+    guid: {a: 5411291837554389306, b: 9573712806249329292}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 57}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 5337821670276483195, b: 5248839919948405433}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 3d9613cf-1919-4139-9e79-8c8b01d6035c--3d9613cf-1919-4139-9e79-8c8b01d6035c.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
+  - __class: Entity
+    name: Image Down
+    guid: {a: 5010572276049334898, b: 16880765094449195953}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 58}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 5525442230721001570, b: 16293664076852080261}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 3d9613cf-1919-4139-9e79-8c8b01d6035c--3d9613cf-1919-4139-9e79-8c8b01d6035c.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
+  - __class: Entity
+    name: Center
+    guid: {a: 5601262940362044023, b: 8028756673909931162}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 59}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 4889445982303280514, b: 1893441492329119117}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 59ebc44d-677e-9c29-50e9-dfc96ad65f3b--59ebc44d-677e-9c29-50e9-dfc96ad65f3b.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
+  - __class: Entity
+    name: Electric
+    guid: {a: 5558331564948450490, b: 6152625663421290171}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 60}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 5383535633089709000, b: 10908695315166258607}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: Library/Artifact/57c4e22a-9ebd-ec7f-6edf-52fa62c320f7/15.png}
+        imageAtlas: {localId: 1, path: 57c4e22a-9ebd-ec7f-6edf-52fa62c320f7--15.imageatlas}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+      - __class: AnimSeqComponent
+        name: ""
+        guid: {a: 5146482339735646263, b: 2878028766654753927}
+        enabled: true
+        animSeq: {localId: 1, path: 57c4e22a-9ebd-ec7f-6edf-52fa62c320f7--57c4e22a-9ebd-ec7f-6edf-52fa62c320f7.seq}
+        texName: Albedo
+        frameName: _MainTex_ST
+        frameRotateName: _Atlas_Rotated
+        frameInnerName: _Atlas_InnerTex_ST
+        playmode:
+          __class: PlayMode
+          value: loop
+        loopCount: -1
+        speed: 12
+        autoplay: true
+        animSeqMap:
+          __class: Map
+          Electric 06: {localId: 1, path: 57c4e22a-9ebd-ec7f-6edf-52fa62c320f7--57c4e22a-9ebd-ec7f-6edf-52fa62c320f7.seq}
+    layer: 1
+visible: true
+config:
+  __class: Map
+msaa:
+  __class: MSAAMode
+  value: _4X
+jsScriptSystems:
+  - js/GraphSystem.js
+  - js/EditorInjectSystem.js
+  - js/Main.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+--- !Transform &2
+name: ""
+guid: {a: 1029434961439008335, b: 6372224128272086966}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &3
+name: ""
+guid: {a: 10827949423485651365, b: 543587625606924957}
+enabled: true
+localPosition: {x: -30, y: 20, z: -20}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.3648142, x: -0.9261341, y: -0.0351273, z: -0.08917614}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &4
+name: ""
+guid: {a: 4659792791970814854, b: 5127968327705723815}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &5
+name: ""
+guid: {a: 5486725769952871354, b: 11261413009529180344}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &6
+name: ""
+guid: {a: 5648244784599619815, b: 4733014586765173404}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 7}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &7
+name: ""
+guid: {a: 5603358445776680626, b: 15951093268300961444}
+enabled: true
+localPosition: {x: 0, y: 1e-15, z: 0}
+localScale: {x: 0.1, y: 0.1, z: 0.1}
+localOrientation: {w: -0.8191522, x: 0, y: 0.5735763, z: 0}
+parent: {localId: 6}
+children:
+  - {localId: 8}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &8
+name: ""
+guid: {a: 5308217778338318764, b: 8965804137759233429}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 0.1, y: 0.1, z: 0.1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 7}
+children:
+  - {localId: 9}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &9
+name: SkeletonAndRenderRoot
+guid: {a: 5709571053848230970, b: 6627589506461958845}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 8}
+children:
+  - {localId: 10}
+  - {localId: 52}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &10
+name: Bip001
+guid: {a: 5263462972984923172, b: 4159774696839397310}
+enabled: true
+localPosition: {x: -2.7885, y: 83.01842, z: -1.687005}
+localScale: {x: 0.9999999, y: 1, z: 1}
+localOrientation: {w: 0.6572652, x: -0.7458864, y: -0.03874755, z: -0.1007695}
+parent: {localId: 9}
+children:
+  - {localId: 11}
+  - {localId: 51}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &11
+name: Bip001 Pelvis
+guid: {a: 4726097853538063709, b: 10964253210856190376}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.5434488, x: -0.5434474, y: -0.4523982, z: -0.4523983}
+parent: {localId: 10}
+children:
+  - {localId: 12}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &12
+name: Bip001 Spine
+guid: {a: 5703304098564627843, b: 2148088998384308114}
+enabled: true
+localPosition: {x: 11.95467, y: 1.746164, z: 0.0001277924}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9877852, x: -0.01662616, y: -0.06749634, z: -0.1394573}
+parent: {localId: 11}
+children:
+  - {localId: 13}
+  - {localId: 43}
+  - {localId: 47}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &13
+name: Bip001 Spine1
+guid: {a: 5618524325594735677, b: 15046021965175091897}
+enabled: true
+localPosition: {x: 10.5554, y: -0.01580095, z: -0.0009593964}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localOrientation: {w: 0.9864158, x: 0.03356927, y: 0.1598667, z: -0.01730975}
+parent: {localId: 12}
+children:
+  - {localId: 14}
+  - {localId: 42}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &14
+name: Bip001 Neck
+guid: {a: 5398451564097456124, b: 12159458574200771210}
+enabled: true
+localPosition: {x: 23.48698, y: -4.51649, z: 1.907349e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9887288, x: -1.545305e-08, y: -4.111417e-07, z: 0.1497179}
+parent: {localId: 13}
+children:
+  - {localId: 15}
+  - {localId: 25}
+  - {localId: 35}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &15
+name: Bip001 L Clavicle
+guid: {a: 4971241253029532723, b: 6013038557945492922}
+enabled: true
+localPosition: {x: -2.649765, y: 2.30954, z: 1.421606}
+localScale: {x: 0.9999999, y: 1, z: 1}
+localOrientation: {w: 0.07539033, x: 0.5875215, y: -0.1482687, z: 0.7919288}
+parent: {localId: 14}
+children:
+  - {localId: 16}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &16
+name: Bip001 L UpperArm
+guid: {a: 4688784921470782103, b: 222187256354964642}
+enabled: true
+localPosition: {x: 11.83007, y: 0, z: 7.629395e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9081748, x: -0.0907823, y: 0.02326069, z: -0.4079657}
+parent: {localId: 15}
+children:
+  - {localId: 17}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &17
+name: Bip001 L Forearm
+guid: {a: 5155755465747095501, b: 12097938314878182322}
+enabled: true
+localPosition: {x: 28.98255, y: 3.814697e-06, z: 7.629395e-06}
+localScale: {x: 1, y: 0.9999999, z: 0.9999999}
+localOrientation: {w: -0.4773941, x: 0, y: 0, z: 0.8786893}
+parent: {localId: 16}
+children:
+  - {localId: 18}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &18
+name: Bip001 L Hand
+guid: {a: 5020669064071589144, b: 17438227340651439260}
+enabled: true
+localPosition: {x: 20.41599, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 0.9999999}
+localOrientation: {w: 0.9694368, x: -0.128648, y: -0.1308311, z: -0.1628658}
+parent: {localId: 17}
+children:
+  - {localId: 19}
+  - {localId: 21}
+  - {localId: 23}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &19
+name: Bip001 L Finger0
+guid: {a: 4840963738644729377, b: 625847174736039318}
+enabled: true
+localPosition: {x: 3.183056, y: 1.843143, z: -3.831566}
+localScale: {x: 1, y: 0.9999999, z: 1}
+localOrientation: {w: 0.6792565, x: 0.6904779, y: 0.1434919, z: 0.203128}
+parent: {localId: 18}
+children:
+  - {localId: 20}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &20
+name: Bip001 L Finger01
+guid: {a: 5540725691748774382, b: 10138302370647009440}
+enabled: true
+localPosition: {x: 4.829819, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9723446, x: -9.2688e-09, y: -2.521377e-08, z: 0.2335507}
+parent: {localId: 19}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &21
+name: Bip001 L Finger1
+guid: {a: 4959473563490124191, b: 15004985769211959214}
+enabled: true
+localPosition: {x: 7.953827, y: -0.3727112, z: -2.658058}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9987534, x: -0.000397657, y: 1.987208e-05, z: 0.04991585}
+parent: {localId: 18}
+children:
+  - {localId: 22}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &22
+name: Bip001 L Finger11
+guid: {a: 5271325439488963837, b: 17717967745834911163}
+enabled: true
+localPosition: {x: 4.325069, y: -1.907349e-06, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9669884, x: -0.01371245, y: -0.05739359, z: 0.2478941}
+parent: {localId: 21}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &23
+name: Bip001 L Finger2
+guid: {a: 5242127435783293879, b: 5291683764781314717}
+enabled: true
+localPosition: {x: 7.824528, y: -0.7222652, z: 0.5000839}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localOrientation: {w: 0.9817626, x: -0.009523875, y: -0.04879691, z: 0.1834952}
+parent: {localId: 18}
+children:
+  - {localId: 24}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &24
+name: Bip001 L Finger21
+guid: {a: 5179756598709076460, b: 555203838427463856}
+enabled: true
+localPosition: {x: 4.402069, y: -1.907349e-06, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.890669, x: -1.3272e-08, y: -6.774848e-09, z: 0.4546524}
+parent: {localId: 23}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &25
+name: Bip001 R Clavicle
+guid: {a: 4671446174349310408, b: 15635924998829785789}
+enabled: true
+localPosition: {x: -2.649757, y: 2.309547, z: -1.42162}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localOrientation: {w: 0.07539191, x: -0.5875214, y: 0.1482665, z: 0.7919291}
+parent: {localId: 14}
+children:
+  - {localId: 26}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &26
+name: Bip001 R UpperArm
+guid: {a: 5483804303721079857, b: 1224595466274588293}
+enabled: true
+localPosition: {x: 11.83007, y: 4.768372e-07, z: 0}
+localScale: {x: 0.9999998, y: 1, z: 0.9999999}
+localOrientation: {w: 0.8215123, x: 0.07938778, y: -0.4367068, z: -0.3579137}
+parent: {localId: 25}
+children:
+  - {localId: 27}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &27
+name: Bip001 R Forearm
+guid: {a: 4976988471427354594, b: 9437201269535170203}
+enabled: true
+localPosition: {x: 28.98256, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.5612852, x: 0, y: 0, z: -0.8276225}
+parent: {localId: 26}
+children:
+  - {localId: 28}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &28
+name: Bip001 R Hand
+guid: {a: 5529704104157891022, b: 11667128455042938005}
+enabled: true
+localPosition: {x: 20.41599, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: -0.03786784, x: 0.9070888, y: -0.2941332, z: -0.2987333}
+parent: {localId: 27}
+children:
+  - {localId: 29}
+  - {localId: 31}
+  - {localId: 33}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &29
+name: Bip001 R Finger0
+guid: {a: 5445558673143622933, b: 7897595003957747866}
+enabled: true
+localPosition: {x: 3.183052, y: 1.843147, z: 3.831572}
+localScale: {x: 0.9999999, y: 0.9999996, z: 1}
+localOrientation: {w: 0.7030584, x: -0.6741378, y: -0.2162488, z: 0.06695992}
+parent: {localId: 28}
+children:
+  - {localId: 30}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &30
+name: Bip001 R Finger01
+guid: {a: 5571786910663056187, b: 13460350316619448490}
+enabled: true
+localPosition: {x: 4.829819, y: 0, z: 7.629395e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9963815, x: 6.157125e-09, y: 1.548049e-08, z: 0.08499305}
+parent: {localId: 29}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &31
+name: Bip001 R Finger1
+guid: {a: 5472897435175599874, b: 13816169380706012602}
+enabled: true
+localPosition: {x: 7.953819, y: -0.3727112, z: 2.65806}
+localScale: {x: 0.9999999, y: 1, z: 0.9999998}
+localOrientation: {w: 0.9931982, x: 0.000395451, y: -4.636002e-05, z: 0.1164355}
+parent: {localId: 28}
+children:
+  - {localId: 32}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &32
+name: Bip001 R Finger11
+guid: {a: 5318867816004477635, b: 7241477704797440909}
+enabled: true
+localPosition: {x: 4.325058, y: 7.629395e-06, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.860387, x: 0.02908366, y: 0.05134388, z: 0.5062135}
+parent: {localId: 31}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &33
+name: Bip001 R Finger2
+guid: {a: 5268282712996841079, b: 17981462241988938643}
+enabled: true
+localPosition: {x: 7.824524, y: -0.7222672, z: -0.5000782}
+localScale: {x: 0.9999998, y: 0.9999998, z: 0.9999998}
+localOrientation: {w: 0.9791513, x: 0.0101928, y: 0.04866154, z: 0.1969542}
+parent: {localId: 28}
+children:
+  - {localId: 34}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &34
+name: Bip001 R Finger21
+guid: {a: 4876151228595582557, b: 15426596566074343817}
+enabled: true
+localPosition: {x: 4.402069, y: 7.629395e-06, z: -9.536743e-07}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localOrientation: {w: 0.6901261, x: -1.053375e-08, y: -2.500641e-10, z: 0.7236892}
+parent: {localId: 33}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &35
+name: Bip001 Head
+guid: {a: 5579146692248780219, b: 5676015215196259263}
+enabled: true
+localPosition: {x: 8.125755, y: -3.814697e-06, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.8598549, x: -0.4998128, y: 0.07861051, z: 0.06824309}
+parent: {localId: 14}
+children:
+  - {localId: 36}
+  - {localId: 39}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &36
+name: Bone_Hair01_L
+guid: {a: 5532225692057260933, b: 9958030522972152981}
+enabled: true
+localPosition: {x: 2.071629, y: -6.088835, z: 4.927811}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.04144223, x: 0.2597093, y: 0.05250213, z: 0.9633676}
+parent: {localId: 35}
+children:
+  - {localId: 37}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &37
+name: Bone_Hair02_L
+guid: {a: 5115409095493341019, b: 991449774191428252}
+enabled: true
+localPosition: {x: 8.496828, y: -1.801613e-05, z: 1.17722e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9504485, x: 0.01157222, y: -0.21667, z: -0.2226386}
+parent: {localId: 36}
+children:
+  - {localId: 38}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &38
+name: Bone_Hair03_L
+guid: {a: 4886113286008242261, b: 14920407047024517798}
+enabled: true
+localPosition: {x: 14.10876, y: 1.301105e-05, z: 9.164235e-07}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.964434, x: -0.03174932, y: 0.2226892, z: 0.138811}
+parent: {localId: 37}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &39
+name: Bone_Hair01_R
+guid: {a: 5475764798419731576, b: 10603752721831760030}
+enabled: true
+localPosition: {x: 2.071629, y: -6.088809, z: -4.927887}
+localScale: {x: 0.9999995, y: 1, z: 1}
+localOrientation: {w: 0.4375689, x: 0.1928704, y: 0.7604656, z: 0.4393478}
+parent: {localId: 35}
+children:
+  - {localId: 40}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &40
+name: Bone_Hair02_R
+guid: {a: 5066400021748550932, b: 2059669924298699649}
+enabled: true
+localPosition: {x: 8.496818, y: 2.288818e-05, z: 3.051758e-05}
+localScale: {x: 1, y: 0.9999999, z: 1}
+localOrientation: {w: 0.8795464, x: -0.01222765, y: -0.2617464, z: 0.3971618}
+parent: {localId: 39}
+children:
+  - {localId: 41}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &41
+name: Bone_Hair03_R
+guid: {a: 4636120368441109520, b: 8156424405860140203}
+enabled: true
+localPosition: {x: 14.10878, y: -1.907349e-05, z: -4.577637e-05}
+localScale: {x: 0.9999997, y: 0.9999999, z: 1}
+localOrientation: {w: 0.932254, x: 0.0373344, y: 0.341492, z: 0.1135427}
+parent: {localId: 40}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &42
+name: Bone_Scabbard
+guid: {a: 4971244204871030383, b: 8477210544527625860}
+enabled: true
+localPosition: {x: 8.431038, y: -14.41255, z: -3.713501}
+localScale: {x: 0.9999998, y: 1, z: 1.000001}
+localOrientation: {w: 0.923552, x: 0.04937271, y: -0.3699736, z: 0.08794149}
+parent: {localId: 13}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &43
+name: Bip001 L Thigh
+guid: {a: 4819703283822529225, b: 11184263954715451568}
+enabled: true
+localPosition: {x: -9.748108, y: -5.115117, z: 9.741821}
+localScale: {x: 0.9999999, y: 1, z: 0.9999999}
+localOrientation: {w: -0.3629024, x: 0.1128915, y: 0.871323, z: -0.3104085}
+parent: {localId: 12}
+children:
+  - {localId: 44}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &44
+name: Bip001 L Calf
+guid: {a: 5018934248142127788, b: 15659067199492501181}
+enabled: true
+localPosition: {x: 45.03788, y: 4.768372e-07, z: -3.814697e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.8987919, x: 0, y: 0, z: -0.4383756}
+parent: {localId: 43}
+children:
+  - {localId: 45}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &45
+name: Bip001 L Foot
+guid: {a: 5748017291118943336, b: 12199593986457502338}
+enabled: true
+localPosition: {x: 43.43268, y: 3.814697e-06, z: 3.814697e-06}
+localScale: {x: 1, y: 0.9999999, z: 1}
+localOrientation: {w: 0.9352421, x: -0.04812925, y: -0.1839749, z: 0.2985952}
+parent: {localId: 44}
+children:
+  - {localId: 46}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &46
+name: Bip001 L Toe0
+guid: {a: 4966546675937989462, b: 11313564492909026233}
+enabled: true
+localPosition: {x: 17.3009, y: 12.99314, z: -3.814697e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7011381, x: -0.09086216, y: -0.09168656, z: 0.7012439}
+parent: {localId: 45}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &47
+name: Bip001 R Thigh
+guid: {a: 5542280940229879262, b: 9754718136314894246}
+enabled: true
+localPosition: {x: -12.05911, y: -4.880305, z: -6.845251}
+localScale: {x: 0.9999999, y: 1, z: 0.9999999}
+localOrientation: {w: 0.09598023, x: 0.1395467, y: 0.9541494, z: 0.2468064}
+parent: {localId: 12}
+children:
+  - {localId: 48}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &48
+name: Bip001 R Calf
+guid: {a: 5692554497887077412, b: 8552686289764794788}
+enabled: true
+localPosition: {x: 45.03788, y: 4.768372e-07, z: 0}
+localScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+localOrientation: {w: 0.9095088, x: 0, y: 0, z: -0.4156847}
+parent: {localId: 47}
+children:
+  - {localId: 49}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &49
+name: Bip001 R Foot
+guid: {a: 4910677213919269502, b: 399177500561421462}
+enabled: true
+localPosition: {x: 43.43267, y: -5.722046e-06, z: 7.629395e-06}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9337013, x: 0.1710835, y: 0.1731447, z: 0.2625894}
+parent: {localId: 48}
+children:
+  - {localId: 50}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &50
+name: Bip001 R Toe0
+guid: {a: 5393348199477258717, b: 10292440745030710433}
+enabled: true
+localPosition: {x: 17.3009, y: 12.99314, z: -3.814697e-06}
+localScale: {x: 0.9999998, y: 0.9999998, z: 1}
+localOrientation: {w: 0.6990386, x: 0.1056921, y: 0.1065134, z: 0.6991632}
+parent: {localId: 49}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &51
+name: Bip001 Weapon_R
+guid: {a: 5392670828851694570, b: 3645831538781083291}
+enabled: true
+localPosition: {x: 21.597, y: -10.90854, z: 43.64013}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.5452479, x: 0.8307613, y: -0.05770589, z: 0.09597197}
+parent: {localId: 10}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &52
+name: 1161_JingKe_High
+guid: {a: 5699864520034693707, b: 3048008817896388527}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7071068, x: -0.7071068, y: -0, z: 0}
+parent: {localId: 9}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &53
+name: ""
+guid: {a: 4943478750453415475, b: 15796117614392788388}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !IFTransform2d &54
+name: ""
+guid: {a: 5080568851554198314, b: 16006150376934810007}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 55}
+  - {localId: 56}
+  - {localId: 57}
+  - {localId: 58}
+  - {localId: 59}
+  - {localId: 60}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: 0, y: 0}
+rotation: 0
+scale: {x: 1, y: 1}
+size: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: 0
+--- !IFTransform2d &55
+name: ""
+guid: {a: 5628539689332132160, b: 13576170985906779820}
+enabled: true
+localPosition: {x: 0.15625, y: -0.296875, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: 100, y: -190}
+rotation: 0
+scale: {x: 1, y: 1}
+size: {x: 99.33221, y: 74.99253}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -1
+--- !IFTransform2d &56
+name: ""
+guid: {a: 4700078481318875160, b: 15194296569209390496}
+enabled: true
+localPosition: {x: -0.15625, y: -0.296875, z: 0}
+localScale: {x: -1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: -100, y: -190}
+rotation: 0
+scale: {x: -1, y: 1}
+size: {x: 99.33221, y: 74.99253}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -2
+--- !IFTransform2d &57
+name: ""
+guid: {a: 5583331966127785776, b: 14164330831043149975}
+enabled: true
+localPosition: {x: -0, y: -0.140625, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.7071068, x: 0, y: 0, z: 0.7071068}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: -0, y: -90}
+rotation: 90
+scale: {x: 1, y: 1}
+size: {x: 99.33221, y: 74.99253}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -3
+--- !IFTransform2d &58
+name: ""
+guid: {a: 5329894740276305196, b: 16668341245520347071}
+enabled: true
+localPosition: {x: 0, y: -0.46875, z: 0}
+localScale: {x: 0.9999999, y: 1, z: 1}
+localOrientation: {w: -0.7071068, x: 0, y: 0, z: 0.7071068}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: 0, y: -300}
+rotation: 270
+scale: {x: 0.9999999, y: 1}
+size: {x: 99.33221, y: 74.99253}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -4
+--- !IFTransform2d &59
+name: ""
+guid: {a: 5356060538915867448, b: 11649486063848783521}
+enabled: true
+localPosition: {x: 0, y: -0.3046875, z: 0}
+localScale: {x: 0.9999998, y: 0.9999999, z: 1}
+localOrientation: {w: -0.7071068, x: 0, y: 0, z: 0.7071068}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: 0, y: -195}
+rotation: 270
+scale: {x: 0.9999998, y: 0.9999999}
+size: {x: 25, y: 29}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -5
+--- !IFTransform2d &60
+name: ""
+guid: {a: 5664056014082262507, b: 4037312023510562731}
+enabled: true
+localPosition: {x: -7.078052e-08, y: -0.3283205, z: 0}
+localScale: {x: 0.9999996, y: 0.9999998, z: 1}
+localOrientation: {w: -0.7071068, x: 0, y: 0, z: 0.7071068}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: -4.529953e-05, y: -210.1251}
+rotation: 270
+scale: {x: 0.9999996, y: 0.9999998}
+size: {x: 512, y: 458}
+pivot: {x: 0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -6

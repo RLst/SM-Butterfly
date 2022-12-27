@@ -1,0 +1,13 @@
+[
+  {
+    "guid": {
+      "a": "8a41537f-8d88-d0b8-e507-151c4253f4ba",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Butterfly_Idle",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false
+  }
+]

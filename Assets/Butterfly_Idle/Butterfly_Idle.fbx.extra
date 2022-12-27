@@ -1,0 +1,27 @@
+[
+  {
+    "guid": {
+      "a": "cd45ff27-66fb-370f-7a45-cf99b316ba82",
+      "b": ""
+    },
+    "extraType": "ResItemFbxAsset",
+    "name": "Butterfly_Idle",
+    "objGuid": "Guid(4700135244986526291, 7529881505979374496)",
+    "rttiType": "Model",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "importAnimation": true,
+    "importVertexColor": false,
+    "importBlendshape": true,
+    "materialsGUIDs": [
+      "442b7669-c5cb-dcb5-ee8d-95720c4f0318"
+    ],
+    "meshGUIDs": [
+      "00e37af3-023e-635c-d4af-780787acca96"
+    ],
+    "animazGUIDs": [
+      "5eff407b-6cd2-2fbe-583c-f1559eeb9366"
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "3d9613cf-1919-4139-9e79-8c8b01d6035c",
+      "b": ""
+    },
+    "extraType": "ResItemPNGImage",
+    "name": "Arrow",
+    "objGuid": "Guid(5185759440512688984, 15581284354319939752)",
+    "rttiType": "Texture2D",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512,
+    "enableMipmap": false,
+    "filterMin": 1,
+    "filterMag": 1,
+    "filterMipmap": 0,
+    "wrapModeS": 0,
+    "wrapModeT": 0,
+    "wrapModeR": 0,
+    "premultiplyAlpha": true
+  }
+]

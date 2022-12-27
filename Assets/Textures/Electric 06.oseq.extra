@@ -1,0 +1,18 @@
+[
+  {
+    "guid": {
+      "a": "57c4e22a-9ebd-ec7f-6edf-52fa62c320f7",
+      "b": ""
+    },
+    "extraType": "ResItemTextureSequence",
+    "name": "Electric 06",
+    "objGuid": "Guid(5480036582469721014, 1386087667417019028)",
+    "rttiType": "AnimSeq",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "compressionType": 0,
+    "quality": 0,
+    "maxResolution": 512
+  }
+]

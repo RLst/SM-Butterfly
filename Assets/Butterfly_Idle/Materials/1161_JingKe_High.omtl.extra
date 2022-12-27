@@ -1,0 +1,16 @@
+[
+  {
+    "guid": {
+      "a": "442b7669-c5cb-dcb5-ee8d-95720c4f0318",
+      "b": ""
+    },
+    "extraType": "ResItemMaterialOmtl",
+    "name": "1161_JingKe_High",
+    "objGuid": "Guid(5560516665795319090, 6328977153142141105)",
+    "rttiType": "Material",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "skinObjGuid": "Guid(4635306201029529837, 18053947303740457133)"
+  }
+]
