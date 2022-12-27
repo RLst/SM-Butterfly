@@ -1157,7 +1157,7 @@ entities:
         blendMode:
           __class: IFBlendMode
           value: Normal
-        texture: {localId: 1, path: Library/Artifact/57c4e22a-9ebd-ec7f-6edf-52fa62c320f7/13.png}
+        texture: {localId: 1, path: Library/Artifact/57c4e22a-9ebd-ec7f-6edf-52fa62c320f7/7.png}
         atlasIndex: 0
         filledType:
           __class: IFFilledType
