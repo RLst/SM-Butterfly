@@ -222,7 +222,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none"
   },
   {
@@ -289,14 +289,14 @@
     "name": "Transform",
     "eulerAngle": [
       0,
-      0,
+      -38,
       0
     ],
     "rotation": [
       0,
+      -0.32556816935539246,
       0,
-      0,
-      1
+      0.9455185532569885
     ],
     "rttiType": "Transform",
     "version": "0.1.0",
@@ -1554,7 +1554,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": true,
+    "expanded": false,
     "type": "fbx_root"
   },
   {
@@ -1569,7 +1569,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": true,
+    "expanded": false,
     "type": "fbx_child"
   },
   {
@@ -2325,7 +2325,7 @@
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "expanded": false,
+    "expanded": true,
     "type": "none"
   },
   {
@@ -2465,10 +2465,64 @@
   },
   {
     "guid": {
+      "a": "968ad692-6985-204c-e6b4-abafea994eed",
+      "b": ""
+    },
+    "objGuid": "Guid(4785603322930449249, 8274770464270412960)",
+    "extraType": "IFTransform2d",
+    "name": "2D Transform",
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rttiType": "IFTransform2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_2dtransform",
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
       "a": "b7659190-bab5-33e8-84d4-03bc36882c0a",
       "b": ""
     },
     "objGuid": "Guid(5329894740276305196, 16668341245520347071)",
+    "extraType": "IFTransform2d",
+    "name": "2D Transform",
+    "eulerAngle": [
+      0,
+      0,
+      0
+    ],
+    "rotation": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "rttiType": "IFTransform2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_2dtransform",
+    "expanded": true,
+    "editable": true
+  },
+  {
+    "guid": {
+      "a": "2a999e9a-74dd-39dc-d48e-f280c28a01ce",
+      "b": ""
+    },
+    "objGuid": "Guid(5759223362215948711, 12173749271601751201)",
     "extraType": "IFTransform2d",
     "name": "2D Transform",
     "eulerAngle": [
@@ -2901,5 +2955,71 @@
     "editable": true,
     "advanced": false,
     "texture": "00000000-0000-0000-0000-00000000003e"
+  },
+  {
+    "guid": {
+      "a": "6725972f-9121-c077-0c01-c8fc29335028",
+      "b": ""
+    },
+    "objGuid": "Guid(5551798415510844172, 888195977859202746)",
+    "extraType": "Entity",
+    "name": "Toward Button",
+    "rttiType": "Entity",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none"
+  },
+  {
+    "guid": {
+      "a": "67bf18e7-0387-36e0-cc8c-d098ba5e192c",
+      "b": ""
+    },
+    "objGuid": "Guid(4691110380899398054, 4480438229168420250)",
+    "extraType": "IFSprite2d",
+    "name": "Image",
+    "rttiType": "IFSprite2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_image",
+    "expanded": true,
+    "editable": true,
+    "advanced": false,
+    "texture": "3d9613cf-1919-4139-9e79-8c8b01d6035c"
+  },
+  {
+    "guid": {
+      "a": "2aa9e7f3-f8a4-c267-b1c0-be8316d4d66b",
+      "b": ""
+    },
+    "objGuid": "Guid(5295883452421590068, 15629559128665994391)",
+    "extraType": "Entity",
+    "name": "Far Button",
+    "rttiType": "Entity",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "expanded": true,
+    "type": "none"
+  },
+  {
+    "guid": {
+      "a": "441e4bb8-4bc9-79ea-67f2-96147c16f40b",
+      "b": ""
+    },
+    "objGuid": "Guid(5102924999717341977, 745561947787565223)",
+    "extraType": "IFSprite2d",
+    "name": "Image",
+    "rttiType": "IFSprite2d",
+    "version": "0.1.0",
+    "isVisibleInInspector": true,
+    "hideInPanel": false,
+    "displayKey": "inspector_add_image",
+    "expanded": true,
+    "editable": true,
+    "advanced": false,
+    "texture": "3d9613cf-1919-4139-9e79-8c8b01d6035c"
   }
 ]

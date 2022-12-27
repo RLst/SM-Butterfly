@@ -6,11 +6,11 @@
     },
     "extraType": "ResItemMaterialOmtl",
     "name": "Matte Shadow_2",
-    "objGuid": "Guid(4649540024348523679, 15207202401663288742)",
+    "objGuid": "Guid(5160998515109473903, 14692520346397949862)",
     "rttiType": "Material",
     "version": "0.1.0",
     "isVisibleInInspector": true,
     "hideInPanel": false,
-    "skinObjGuid": "Guid(5210233140718199402, 8707454894484648840)"
+    "skinObjGuid": "Guid(5018506121944622180, 8091535628154874496)"
   }
 ]

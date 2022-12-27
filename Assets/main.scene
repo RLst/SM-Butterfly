@@ -160,7 +160,7 @@ entities:
           isDraggable: false
           isInteractable: true
           rotateSensitivity: 58.51
-          scaleSensitivity: 0
+          scaleSensitivity: 30
     layer: 0
   - __class: Entity
     name: Butterfly_Idle
@@ -862,7 +862,7 @@ entities:
           value: Normal
         blendAlpha: 1
         blendAlphaCkeck: true
-        drawCallNum: 2
+        drawCallNum: 6
         maskType:
           __class: IFMaskType
           value: None
@@ -898,7 +898,7 @@ entities:
         sizeMode:
           __class: IFSprite2dSizeMode
           value: Custom
-        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        colorTint: {r: 1, g: 0.3176471, b: 0.2901961, a: 0.8588235}
         blendMode:
           __class: IFBlendMode
           value: Normal
@@ -949,7 +949,7 @@ entities:
         sizeMode:
           __class: IFSprite2dSizeMode
           value: Custom
-        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        colorTint: {r: 1, g: 0.3176471, b: 0.2901961, a: 0.8588235}
         blendMode:
           __class: IFBlendMode
           value: Normal
@@ -1000,7 +1000,7 @@ entities:
         sizeMode:
           __class: IFSprite2dSizeMode
           value: Custom
-        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        colorTint: {r: 0.5803922, g: 1, b: 0.2627451, a: 1}
         blendMode:
           __class: IFBlendMode
           value: Normal
@@ -1038,7 +1038,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 58}
+      - {localId: 59}
       - __class: IFSprite2d
         name: ""
         guid: {a: 5525442230721001570, b: 16293664076852080261}
@@ -1051,7 +1051,7 @@ entities:
         sizeMode:
           __class: IFSprite2dSizeMode
           value: Custom
-        colorTint: {r: 1, g: 1, b: 1, a: 1}
+        colorTint: {r: 0.5803922, g: 1, b: 0.2627451, a: 1}
         blendMode:
           __class: IFBlendMode
           value: Normal
@@ -1089,7 +1089,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 59}
+      - {localId: 61}
       - __class: IFSprite2d
         name: ""
         guid: {a: 4889445982303280514, b: 1893441492329119117}
@@ -1140,7 +1140,7 @@ entities:
     scene: {localId: 1}
     selfvisible: false
     components:
-      - {localId: 60}
+      - {localId: 62}
       - __class: IFSprite2d
         name: ""
         guid: {a: 5383535633089709000, b: 10908695315166258607}
@@ -1157,7 +1157,7 @@ entities:
         blendMode:
           __class: IFBlendMode
           value: Normal
-        texture: {localId: 1, path: Library/Artifact/57c4e22a-9ebd-ec7f-6edf-52fa62c320f7/7.png}
+        texture: {localId: 1, path: 59ebc44d-677e-9c29-50e9-dfc96ad65f3b--59ebc44d-677e-9c29-50e9-dfc96ad65f3b.png}
         atlasIndex: 0
         filledType:
           __class: IFFilledType
@@ -1209,7 +1209,7 @@ entities:
     scene: {localId: 1}
     selfvisible: true
     components:
-      - {localId: 61}
+      - {localId: 63}
       - __class: IFLayer2d
         name: ""
         guid: {a: 5734413156348315721, b: 5473687629690506652}
@@ -1298,12 +1298,114 @@ entities:
         sizeInited: true
         freeInited: false
     layer: 1
+  - __class: Entity
+    name: Toward Button
+    guid: {a: 5551798415510844172, b: 888195977859202746}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 60}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 4691110380899398054, b: 4480438229168420250}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 0.1607843, g: 0.6, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 3d9613cf-1919-4139-9e79-8c8b01d6035c--3d9613cf-1919-4139-9e79-8c8b01d6035c.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
+  - __class: Entity
+    name: Far Button
+    guid: {a: 5295883452421590068, b: 15629559128665994391}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 58}
+      - __class: IFSprite2d
+        name: ""
+        guid: {a: 5102924999717341977, b: 745561947787565223}
+        enabled: true
+        alpha: 1
+        cascadeAlphaEnabled: false
+        type:
+          __class: IFSprite2dType
+          value: Normal
+        sizeMode:
+          __class: IFSprite2dSizeMode
+          value: Custom
+        colorTint: {r: 0.1607843, g: 0.6, b: 1, a: 1}
+        blendMode:
+          __class: IFBlendMode
+          value: Normal
+        texture: {localId: 1, path: 3d9613cf-1919-4139-9e79-8c8b01d6035c--3d9613cf-1919-4139-9e79-8c8b01d6035c.png}
+        atlasIndex: 0
+        filledType:
+          __class: IFFilledType
+          value: Horizontal
+        filledStartPos: 0
+        filledRange: 1
+        ellipseX: 336
+        ellipseY: 336
+        topLeftPoint: {x: 0, y: 0}
+        topRightPoint: {x: 0, y: 0}
+        bottomLeftPoint: {x: 0, y: 0}
+        bottomRightPoint: {x: 0, y: 0}
+        slicedLeft: 0.1000000014901161
+        slicedRight: 0.8999999761581421
+        slicedBottom: 0.1000000014901161
+        slicedTop: 0.8999999761581421
+        fillCenter: true
+        topLeft: 0.5
+        topRight: 0.5
+        bottomLeft: 0.5
+        bottomRight: 0.5
+        lineWidth: 1
+        lineColor: {r: 1, g: 1, b: 1, a: 1}
+        outer: false
+        sizeInited: true
+        freeInited: false
+    layer: 1
 visible: true
 config:
   __class: Map
 msaa:
   __class: MSAAMode
-  value: _4X
+  value: NONE
 jsScriptSystems:
   - js/GraphSystem.js
   - js/EditorInjectSystem.js
@@ -1373,7 +1475,7 @@ guid: {a: 5308217778338318764, b: 8965804137759233429}
 enabled: true
 localPosition: {x: 0, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 1, x: 0, y: 0, z: 0}
+localOrientation: {w: 0.9455186, x: 0, y: -0.3255682, z: 0}
 parent: {localId: 6}
 children:
   - {localId: 8}
@@ -1399,8 +1501,8 @@ name: Bip001
 guid: {a: 5263462972984923172, b: 4159774696839397310}
 enabled: true
 localPosition: {x: -2.7885, y: 83.01842, z: -1.687005}
-localScale: {x: 0.9999998, y: 0.9999998, z: 0.9999999}
-localOrientation: {w: 0.6572653, x: -0.7458864, y: -0.03874755, z: -0.1007695}
+localScale: {x: 0.9999999, y: 1, z: 1}
+localOrientation: {w: 0.6572652, x: -0.7458864, y: -0.03874755, z: -0.1007695}
 parent: {localId: 8}
 children:
   - {localId: 10}
@@ -1414,7 +1516,7 @@ guid: {a: 4726097853538063709, b: 10964253210856190376}
 enabled: true
 localPosition: {x: 0, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.5434487, x: -0.5434474, y: -0.4523982, z: -0.4523983}
+localOrientation: {w: 0.5434488, x: -0.5434474, y: -0.4523982, z: -0.4523983}
 parent: {localId: 9}
 children:
   - {localId: 11}
@@ -1426,7 +1528,7 @@ name: Bip001 Spine
 guid: {a: 5703304098564627843, b: 2148088998384308114}
 enabled: true
 localPosition: {x: 11.95467, y: 1.746164, z: 0.0001277924}
-localScale: {x: 1, y: 0.9999999, z: 1}
+localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 0.9877852, x: -0.01662616, y: -0.06749634, z: -0.1394573}
 parent: {localId: 10}
 children:
@@ -1441,7 +1543,7 @@ name: Bip001 Spine1
 guid: {a: 5618524325594735677, b: 15046021965175091897}
 enabled: true
 localPosition: {x: 10.5554, y: -0.01580095, z: -0.0009593964}
-localScale: {x: 0.9999998, y: 0.9999999, z: 1}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
 localOrientation: {w: 0.9864158, x: 0.03356927, y: 0.1598667, z: -0.01730975}
 parent: {localId: 11}
 children:
@@ -1470,8 +1572,8 @@ name: Bip001 L Clavicle
 guid: {a: 4971241253029532723, b: 6013038557945492922}
 enabled: true
 localPosition: {x: -2.649765, y: 2.30954, z: 1.421606}
-localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.07539034, x: 0.5875214, y: -0.1482687, z: 0.7919288}
+localScale: {x: 0.9999999, y: 1, z: 1}
+localOrientation: {w: 0.07539033, x: 0.5875215, y: -0.1482687, z: 0.7919288}
 parent: {localId: 13}
 children:
   - {localId: 15}
@@ -1483,8 +1585,8 @@ name: Bip001 L UpperArm
 guid: {a: 4688784921470782103, b: 222187256354964642}
 enabled: true
 localPosition: {x: 11.83007, y: 0, z: 7.629395e-06}
-localScale: {x: 1, y: 0.9999999, z: 1}
-localOrientation: {w: 0.9081748, x: -0.09078231, y: 0.02326069, z: -0.4079658}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9081748, x: -0.0907823, y: 0.02326069, z: -0.4079657}
 parent: {localId: 14}
 children:
   - {localId: 16}
@@ -1509,7 +1611,7 @@ name: Bip001 L Hand
 guid: {a: 5020669064071589144, b: 17438227340651439260}
 enabled: true
 localPosition: {x: 20.41599, y: 0, z: 0}
-localScale: {x: 1, y: 1, z: 0.9999998}
+localScale: {x: 1, y: 1, z: 0.9999999}
 localOrientation: {w: 0.9694368, x: -0.128648, y: -0.1308311, z: -0.1628658}
 parent: {localId: 16}
 children:
@@ -1524,7 +1626,7 @@ name: Bip001 L Finger0
 guid: {a: 4840963738644729377, b: 625847174736039318}
 enabled: true
 localPosition: {x: 3.183056, y: 1.843143, z: -3.831566}
-localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localScale: {x: 1, y: 0.9999999, z: 1}
 localOrientation: {w: 0.6792565, x: 0.6904779, y: 0.1434919, z: 0.203128}
 parent: {localId: 17}
 children:
@@ -1537,7 +1639,7 @@ name: Bip001 L Finger01
 guid: {a: 5540725691748774382, b: 10138302370647009440}
 enabled: true
 localPosition: {x: 4.829819, y: 0, z: 0}
-localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 0.9723446, x: -9.2688e-09, y: -2.521377e-08, z: 0.2335507}
 parent: {localId: 18}
 mobility:
@@ -1549,7 +1651,7 @@ guid: {a: 4959473563490124191, b: 15004985769211959214}
 enabled: true
 localPosition: {x: 7.953827, y: -0.3727112, z: -2.658058}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.9987534, x: -0.0003976571, y: 1.987208e-05, z: 0.04991586}
+localOrientation: {w: 0.9987534, x: -0.000397657, y: 1.987208e-05, z: 0.04991585}
 parent: {localId: 17}
 children:
   - {localId: 21}
@@ -1561,8 +1663,8 @@ name: Bip001 L Finger11
 guid: {a: 5271325439488963837, b: 17717967745834911163}
 enabled: true
 localPosition: {x: 4.325069, y: -1.907349e-06, z: 0}
-localScale: {x: 0.9999999, y: 0.9999999, z: 1}
-localOrientation: {w: 0.9669883, x: -0.01371245, y: -0.05739361, z: 0.2478942}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 0.9669884, x: -0.01371245, y: -0.05739359, z: 0.2478941}
 parent: {localId: 20}
 mobility:
   __class: Mobility
@@ -1572,8 +1674,8 @@ name: Bip001 L Finger2
 guid: {a: 5242127435783293879, b: 5291683764781314717}
 enabled: true
 localPosition: {x: 7.824528, y: -0.7222652, z: 0.5000839}
-localScale: {x: 0.9999999, y: 0.9999998, z: 1}
-localOrientation: {w: 0.9817625, x: -0.009523878, y: -0.04879691, z: 0.1834952}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localOrientation: {w: 0.9817626, x: -0.009523875, y: -0.04879691, z: 0.1834952}
 parent: {localId: 17}
 children:
   - {localId: 23}
@@ -1586,7 +1688,7 @@ guid: {a: 5179756598709076460, b: 555203838427463856}
 enabled: true
 localPosition: {x: 4.402069, y: -1.907349e-06, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.890669, x: -1.3272e-08, y: -6.774849e-09, z: 0.4546524}
+localOrientation: {w: 0.890669, x: -1.3272e-08, y: -6.774848e-09, z: 0.4546524}
 parent: {localId: 22}
 mobility:
   __class: Mobility
@@ -1596,8 +1698,8 @@ name: Bip001 R Clavicle
 guid: {a: 4671446174349310408, b: 15635924998829785789}
 enabled: true
 localPosition: {x: -2.649757, y: 2.309547, z: -1.42162}
-localScale: {x: 1, y: 0.9999999, z: 1}
-localOrientation: {w: 0.07539193, x: -0.5875214, y: 0.1482665, z: 0.7919291}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
+localOrientation: {w: 0.07539191, x: -0.5875214, y: 0.1482665, z: 0.7919291}
 parent: {localId: 13}
 children:
   - {localId: 25}
@@ -1609,8 +1711,8 @@ name: Bip001 R UpperArm
 guid: {a: 5483804303721079857, b: 1224595466274588293}
 enabled: true
 localPosition: {x: 11.83007, y: 4.768372e-07, z: 0}
-localScale: {x: 0.9999997, y: 1, z: 0.9999998}
-localOrientation: {w: 0.8215123, x: 0.07938775, y: -0.4367068, z: -0.3579137}
+localScale: {x: 0.9999998, y: 1, z: 0.9999999}
+localOrientation: {w: 0.8215123, x: 0.07938778, y: -0.4367068, z: -0.3579137}
 parent: {localId: 24}
 children:
   - {localId: 26}
@@ -1623,7 +1725,7 @@ guid: {a: 4976988471427354594, b: 9437201269535170203}
 enabled: true
 localPosition: {x: 28.98256, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.561285, x: 0, y: 0, z: -0.8276225}
+localOrientation: {w: 0.5612852, x: 0, y: 0, z: -0.8276225}
 parent: {localId: 25}
 children:
   - {localId: 27}
@@ -1636,7 +1738,7 @@ guid: {a: 5529704104157891022, b: 11667128455042938005}
 enabled: true
 localPosition: {x: 20.41599, y: 0, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: -0.03786783, x: 0.9070888, y: -0.2941332, z: -0.2987333}
+localOrientation: {w: -0.03786784, x: 0.9070888, y: -0.2941332, z: -0.2987333}
 parent: {localId: 26}
 children:
   - {localId: 28}
@@ -1650,8 +1752,8 @@ name: Bip001 R Finger0
 guid: {a: 5445558673143622933, b: 7897595003957747866}
 enabled: true
 localPosition: {x: 3.183052, y: 1.843147, z: 3.831572}
-localScale: {x: 0.9999998, y: 0.9999995, z: 0.9999999}
-localOrientation: {w: 0.7030583, x: -0.6741378, y: -0.2162488, z: 0.06695992}
+localScale: {x: 0.9999999, y: 0.9999996, z: 1}
+localOrientation: {w: 0.7030584, x: -0.6741378, y: -0.2162488, z: 0.06695992}
 parent: {localId: 27}
 children:
   - {localId: 29}
@@ -1664,7 +1766,7 @@ guid: {a: 5571786910663056187, b: 13460350316619448490}
 enabled: true
 localPosition: {x: 4.829819, y: 0, z: 7.629395e-06}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.9963815, x: 6.157124e-09, y: 1.548049e-08, z: 0.08499305}
+localOrientation: {w: 0.9963815, x: 6.157125e-09, y: 1.548049e-08, z: 0.08499305}
 parent: {localId: 28}
 mobility:
   __class: Mobility
@@ -1675,7 +1777,7 @@ guid: {a: 5472897435175599874, b: 13816169380706012602}
 enabled: true
 localPosition: {x: 7.953819, y: -0.3727112, z: 2.65806}
 localScale: {x: 0.9999999, y: 1, z: 0.9999998}
-localOrientation: {w: 0.9931982, x: 0.0003954511, y: -4.636004e-05, z: 0.1164355}
+localOrientation: {w: 0.9931982, x: 0.000395451, y: -4.636002e-05, z: 0.1164355}
 parent: {localId: 27}
 children:
   - {localId: 31}
@@ -1688,7 +1790,7 @@ guid: {a: 5318867816004477635, b: 7241477704797440909}
 enabled: true
 localPosition: {x: 4.325058, y: 7.629395e-06, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.860387, x: 0.02908366, y: 0.05134389, z: 0.5062135}
+localOrientation: {w: 0.860387, x: 0.02908366, y: 0.05134388, z: 0.5062135}
 parent: {localId: 30}
 mobility:
   __class: Mobility
@@ -1698,7 +1800,7 @@ name: Bip001 R Finger2
 guid: {a: 5268282712996841079, b: 17981462241988938643}
 enabled: true
 localPosition: {x: 7.824524, y: -0.7222672, z: -0.5000782}
-localScale: {x: 0.9999997, y: 0.9999997, z: 0.9999998}
+localScale: {x: 0.9999998, y: 0.9999998, z: 0.9999998}
 localOrientation: {w: 0.9791513, x: 0.0101928, y: 0.04866154, z: 0.1969542}
 parent: {localId: 27}
 children:
@@ -1711,7 +1813,7 @@ name: Bip001 R Finger21
 guid: {a: 4876151228595582557, b: 15426596566074343817}
 enabled: true
 localPosition: {x: 4.402069, y: 7.629395e-06, z: -9.536743e-07}
-localScale: {x: 1, y: 1, z: 1}
+localScale: {x: 0.9999999, y: 0.9999999, z: 1}
 localOrientation: {w: 0.6901261, x: -1.053375e-08, y: -2.500641e-10, z: 0.7236892}
 parent: {localId: 32}
 mobility:
@@ -1737,7 +1839,7 @@ guid: {a: 5532225692057260933, b: 9958030522972152981}
 enabled: true
 localPosition: {x: 2.071629, y: -6.088835, z: 4.927811}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.04144222, x: 0.2597093, y: 0.05250212, z: 0.9633676}
+localOrientation: {w: 0.04144223, x: 0.2597093, y: 0.05250213, z: 0.9633676}
 parent: {localId: 34}
 children:
   - {localId: 36}
@@ -1749,7 +1851,7 @@ name: Bone_Hair02_L
 guid: {a: 5115409095493341019, b: 991449774191428252}
 enabled: true
 localPosition: {x: 8.496828, y: -1.801613e-05, z: 1.17722e-06}
-localScale: {x: 0.9999999, y: 1, z: 1}
+localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 0.9504485, x: 0.01157222, y: -0.21667, z: -0.2226386}
 parent: {localId: 35}
 children:
@@ -1763,7 +1865,7 @@ guid: {a: 4886113286008242261, b: 14920407047024517798}
 enabled: true
 localPosition: {x: 14.10876, y: 1.301105e-05, z: 9.164235e-07}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.9644341, x: -0.03174932, y: 0.2226892, z: 0.138811}
+localOrientation: {w: 0.964434, x: -0.03174932, y: 0.2226892, z: 0.138811}
 parent: {localId: 36}
 mobility:
   __class: Mobility
@@ -1773,8 +1875,8 @@ name: Bone_Hair01_R
 guid: {a: 5475764798419731576, b: 10603752721831760030}
 enabled: true
 localPosition: {x: 2.071629, y: -6.088809, z: -4.927887}
-localScale: {x: 0.9999997, y: 0.9999999, z: 1}
-localOrientation: {w: 0.4375689, x: 0.1928704, y: 0.7604656, z: 0.4393479}
+localScale: {x: 0.9999995, y: 1, z: 1}
+localOrientation: {w: 0.4375689, x: 0.1928704, y: 0.7604656, z: 0.4393478}
 parent: {localId: 34}
 children:
   - {localId: 39}
@@ -1787,7 +1889,7 @@ guid: {a: 5066400021748550932, b: 2059669924298699649}
 enabled: true
 localPosition: {x: 8.496818, y: 2.288818e-05, z: 3.051758e-05}
 localScale: {x: 1, y: 0.9999999, z: 1}
-localOrientation: {w: 0.8795463, x: -0.01222765, y: -0.2617464, z: 0.3971619}
+localOrientation: {w: 0.8795464, x: -0.01222765, y: -0.2617464, z: 0.3971618}
 parent: {localId: 38}
 children:
   - {localId: 40}
@@ -1810,8 +1912,8 @@ name: Bone_Scabbard
 guid: {a: 4971244204871030383, b: 8477210544527625860}
 enabled: true
 localPosition: {x: 8.431038, y: -14.41255, z: -3.713501}
-localScale: {x: 0.9999999, y: 0.9999999, z: 1.000001}
-localOrientation: {w: 0.9235519, x: 0.04937273, y: -0.3699737, z: 0.08794152}
+localScale: {x: 0.9999998, y: 1, z: 1.000001}
+localOrientation: {w: 0.923552, x: 0.04937271, y: -0.3699736, z: 0.08794149}
 parent: {localId: 12}
 mobility:
   __class: Mobility
@@ -1821,8 +1923,8 @@ name: Bip001 L Thigh
 guid: {a: 4819703283822529225, b: 11184263954715451568}
 enabled: true
 localPosition: {x: -9.748108, y: -5.115117, z: 9.741821}
-localScale: {x: 0.9999997, y: 1, z: 0.9999995}
-localOrientation: {w: -0.3629025, x: 0.1128915, y: 0.871323, z: -0.3104085}
+localScale: {x: 0.9999999, y: 1, z: 0.9999999}
+localOrientation: {w: -0.3629024, x: 0.1128915, y: 0.871323, z: -0.3104085}
 parent: {localId: 11}
 children:
   - {localId: 43}
@@ -1847,7 +1949,7 @@ name: Bip001 L Foot
 guid: {a: 5748017291118943336, b: 12199593986457502338}
 enabled: true
 localPosition: {x: 43.43268, y: 3.814697e-06, z: 3.814697e-06}
-localScale: {x: 1, y: 0.9999998, z: 0.9999999}
+localScale: {x: 1, y: 0.9999999, z: 1}
 localOrientation: {w: 0.9352421, x: -0.04812925, y: -0.1839749, z: 0.2985952}
 parent: {localId: 43}
 children:
@@ -1861,7 +1963,7 @@ guid: {a: 4966546675937989462, b: 11313564492909026233}
 enabled: true
 localPosition: {x: 17.3009, y: 12.99314, z: -3.814697e-06}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.7011381, x: -0.09086216, y: -0.09168655, z: 0.701244}
+localOrientation: {w: 0.7011381, x: -0.09086216, y: -0.09168656, z: 0.7012439}
 parent: {localId: 44}
 mobility:
   __class: Mobility
@@ -1871,8 +1973,8 @@ name: Bip001 R Thigh
 guid: {a: 5542280940229879262, b: 9754718136314894246}
 enabled: true
 localPosition: {x: -12.05911, y: -4.880305, z: -6.845251}
-localScale: {x: 0.9999998, y: 1, z: 0.9999998}
-localOrientation: {w: 0.09598024, x: 0.1395467, y: 0.9541494, z: 0.2468064}
+localScale: {x: 0.9999999, y: 1, z: 0.9999999}
+localOrientation: {w: 0.09598023, x: 0.1395467, y: 0.9541494, z: 0.2468064}
 parent: {localId: 11}
 children:
   - {localId: 47}
@@ -1897,7 +1999,7 @@ name: Bip001 R Foot
 guid: {a: 4910677213919269502, b: 399177500561421462}
 enabled: true
 localPosition: {x: 43.43267, y: -5.722046e-06, z: 7.629395e-06}
-localScale: {x: 1, y: 0.9999999, z: 0.9999999}
+localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 0.9337013, x: 0.1710835, y: 0.1731447, z: 0.2625894}
 parent: {localId: 47}
 children:
@@ -1910,8 +2012,8 @@ name: Bip001 R Toe0
 guid: {a: 5393348199477258717, b: 10292440745030710433}
 enabled: true
 localPosition: {x: 17.3009, y: 12.99314, z: -3.814697e-06}
-localScale: {x: 0.9999999, y: 1, z: 1}
-localOrientation: {w: 0.6990385, x: 0.1056921, y: 0.1065134, z: 0.6991633}
+localScale: {x: 0.9999998, y: 0.9999998, z: 1}
+localOrientation: {w: 0.6990386, x: 0.1056921, y: 0.1065134, z: 0.6991632}
 parent: {localId: 48}
 mobility:
   __class: Mobility
@@ -1922,7 +2024,7 @@ guid: {a: 5392670828851694570, b: 3645831538781083291}
 enabled: true
 localPosition: {x: 21.597, y: -10.90854, z: 43.64013}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: 0.5452477, x: 0.8307613, y: -0.05770593, z: 0.09597198}
+localOrientation: {w: 0.5452479, x: 0.8307613, y: -0.05770589, z: 0.09597197}
 parent: {localId: 9}
 mobility:
   __class: Mobility
@@ -1972,9 +2074,9 @@ depth: 0
 name: ""
 guid: {a: 5565853557377858741, b: 9372020873526445988}
 enabled: true
-localPosition: {x: -2.980232e-08, y: -0.2624998, z: 0}
+localPosition: {x: -2.980233e-08, y: -0.2624998, z: 0}
 localScale: {x: 0.9999993, y: 0.9999994, z: 1}
-localOrientation: {w: 0.7071067, x: 0, y: 0, z: -0.7071068}
+localOrientation: {w: -0.7071068, x: 0, y: 0, z: 0.7071068}
 parent: {localId: 53}
 children:
   - {localId: 55}
@@ -1983,6 +2085,8 @@ children:
   - {localId: 58}
   - {localId: 59}
   - {localId: 60}
+  - {localId: 61}
+  - {localId: 62}
 mobility:
   __class: Mobility
   value: Dynamic
@@ -1998,14 +2102,14 @@ depth: -1
 name: ""
 guid: {a: 5628539689332132160, b: 13576170985906779820}
 enabled: true
-localPosition: {x: -0.0007278025, y: 0.1252547, z: 0}
+localPosition: {x: 0, y: 0.15625, z: 0}
 localScale: {x: 1.000001, y: 1.000001, z: 1}
-localOrientation: {w: 0.7071067, x: 0, y: 0, z: 0.7071068}
+localOrientation: {w: 0.7071067, x: 0, y: 0, z: 0.7071069}
 parent: {localId: 54}
 mobility:
   __class: Mobility
   value: Dynamic
-position: {x: -0.4657936, y: 80.16302}
+position: {x: 0, y: 100}
 rotation: 90.00000762939453
 scale: {x: 1.000001, y: 1.000001}
 size: {x: 99.33221, y: 74.99253}
@@ -2017,14 +2121,14 @@ depth: -2
 name: ""
 guid: {a: 4700078481318875160, b: 15194296569209390496}
 enabled: true
-localPosition: {x: -0.006041348, y: -0.1231883, z: 0}
+localPosition: {x: -0.006041348, y: -0.15625, z: 0}
 localScale: {x: -1.000001, y: 1.000001, z: 1}
-localOrientation: {w: 0.7071067, x: 0, y: 0, z: 0.7071068}
+localOrientation: {w: 0.7071067, x: 0, y: 0, z: 0.7071069}
 parent: {localId: 54}
 mobility:
   __class: Mobility
   value: Dynamic
-position: {x: -3.866463, y: -78.84053}
+position: {x: -3.866463, y: -100}
 rotation: 90.00000762939453
 scale: {x: -1.000001, y: 1.000001}
 size: {x: 99.33221, y: 74.99253}
@@ -2036,41 +2140,79 @@ depth: -3
 name: ""
 guid: {a: 5583331966127785776, b: 14164330831043149975}
 enabled: true
-localPosition: {x: -0.1233257, y: -1.490116e-08, z: 0}
+localPosition: {x: -0.15625, y: 0.003568995, z: 0}
 localScale: {x: 1, y: 1, z: 1}
-localOrientation: {w: -1.192093e-07, x: 0, y: 0, z: 1}
+localOrientation: {w: -2.8213e-07, x: 0, y: 0, z: 1}
 parent: {localId: 54}
 mobility:
   __class: Mobility
   value: Dynamic
-position: {x: -78.92847, y: -9.536743e-06}
+position: {x: -100, y: 2.284157}
 rotation: 180.0000152587891
 scale: {x: 1, y: 1}
-size: {x: 99.33221, y: 74.99253}
+size: {x: 105.3832, y: 79.56087}
 pivot: {x: 0.5, y: 0.5}
 flipX: false
 flipY: false
 depth: -4
 --- !IFTransform2d &58
 name: ""
+guid: {a: 4785603322930449249, b: 8274770464270412960}
+enabled: true
+localPosition: {x: 0, y: 0.003568995, z: 0}
+localScale: {x: 0.9999999, y: 1, z: 1}
+localOrientation: {w: 0.3826834, x: 0, y: 0, z: 0.9238795}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: 0, y: 2.284157}
+rotation: 135
+scale: {x: 0.9999999, y: 1}
+size: {x: 105.3832, y: 79.56087}
+pivot: {x: -0.5, y: 0.5}
+flipX: false
+flipY: false
+depth: -5
+--- !IFTransform2d &59
+name: ""
 guid: {a: 5329894740276305196, b: 16668341245520347071}
 enabled: true
-localPosition: {x: 0.1212594, y: 2.980232e-08, z: 0}
+localPosition: {x: 0.15625, y: 2.980233e-08, z: 0}
 localScale: {x: 1, y: 1, z: 1}
 localOrientation: {w: 1, x: 0, y: 0, z: 0}
 parent: {localId: 54}
 mobility:
   __class: Mobility
   value: Dynamic
-position: {x: 77.60603, y: 1.907349e-05}
+position: {x: 100, y: 1.907349e-05}
 rotation: 0
 scale: {x: 1, y: 1}
 size: {x: 96, y: 74.99253}
 pivot: {x: 0.4999998, y: 0.5000001}
 flipX: false
 flipY: false
-depth: -5
---- !IFTransform2d &59
+depth: -6
+--- !IFTransform2d &60
+name: ""
+guid: {a: 5759223362215948711, b: 12173749271601751201}
+enabled: true
+localPosition: {x: 0.0003409386, y: 3.909522e-08, z: 0}
+localScale: {x: -0.9999999, y: 1, z: 1}
+localOrientation: {w: 0.3826834, x: 0, y: 0, z: 0.9238795}
+parent: {localId: 54}
+mobility:
+  __class: Mobility
+  value: Dynamic
+position: {x: 0.2182007, y: 2.502094e-05}
+rotation: 135
+scale: {x: 0.9999999, y: 1}
+size: {x: 96, y: 74.99253}
+pivot: {x: -0.6, y: 0.5000001}
+flipX: true
+flipY: false
+depth: -7
+--- !IFTransform2d &61
 name: ""
 guid: {a: 5356060538915867448, b: 11649486063848783521}
 enabled: true
@@ -2088,8 +2230,8 @@ size: {x: 25, y: 29}
 pivot: {x: 0.5, y: 0.5}
 flipX: false
 flipY: false
-depth: -6
---- !IFTransform2d &60
+depth: -8
+--- !IFTransform2d &62
 name: ""
 guid: {a: 5664056014082262507, b: 4037312023510562731}
 enabled: true
@@ -2107,8 +2249,8 @@ size: {x: 512, y: 458}
 pivot: {x: 0.5, y: 0.5}
 flipX: false
 flipY: false
-depth: -7
---- !IFTransform2d &61
+depth: -9
+--- !IFTransform2d &63
 name: ""
 guid: {a: 5210946341291214495, b: 17051834524809451407}
 enabled: true
@@ -2125,4 +2267,4 @@ size: {x: 720, y: 1280}
 pivot: {x: 0.5, y: 0.5}
 flipX: false
 flipY: false
-depth: -8
+depth: -10
